@@ -1,29 +1,51 @@
 package org.smartflow.server;
 
 
-
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class SimpleHttpServer extends Thread {
+import org.smartflow.Resources;
+import org.smartflow.Settings;
 
-static final String HTML_START =
-"<html>" +
-"<title>HTTP Server in java</title>" +
-"<body>";
+public class SmartHttpServer extends Thread {
 
-static final String HTML_END =
-"</body>" +
-"</html>";
+private static final SmartHttpServer SmartHttpServerInstance = new SmartHttpServer();
 
-Socket connectedClient = null;
-BufferedReader inFromClient = null;
-DataOutputStream outToClient = null;
+private Socket clientSocket;
+private ServerSocket serverSocket;
+
+private BufferedReader socketReader;
+private DataOutputStream outputStream;
 
 
-public SimpleHttpServer(Socket client) {
-	connectedClient = client;
+
+private SmartHttpServer() {
+	
+	try {
+		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
+		serverSocket.accept();
+	} catch (UnknownHostException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+
+
+public static SmartHttpServer getInstance() {
+    return SmartHttpServerInstance;
+}
+
+public void setClient(Socket client) {
+	this.clientSocket = client;
+}
+
+public Socket getClient() {
+	return this.clientSocket;
 }
 
 public void run() {
@@ -31,12 +53,12 @@ public void run() {
 	try {
 
 		System.out.println( "The Client "+
-				connectedClient.getInetAddress() + ":" + connectedClient.getPort() + " is connected");
+		clientSocket.getInetAddress() + ":" + clientSocket.getPort() + " is connected");
 
-		inFromClient = new BufferedReader(new InputStreamReader (connectedClient.getInputStream()));
-		outToClient = new DataOutputStream(connectedClient.getOutputStream());
+		socketReader = new BufferedReader(new InputStreamReader (clientSocket.getInputStream()));
+		outputStream = new DataOutputStream(clientSocket.getOutputStream());
 
-		String requestString = inFromClient.readLine();
+		String requestString = socketReader.readLine();
 		String headerLine = requestString;
 
 		StringTokenizer tokenizer = new StringTokenizer(headerLine);
@@ -49,12 +71,12 @@ public void run() {
 
 		System.out.println("The HTTP request string is ....");
 		
-		while (inFromClient.ready())	{
+		while (socketReader.ready())	{
 
 			// Read the HTTP complete HTTP Query
 			responseBuffer.append(requestString + "<BR>");
 			System.out.println(requestString);
-			requestString = inFromClient.readLine();
+			requestString = socketReader.readLine();
 		}
 
 		if (httpMethod.equals("GET")) {
@@ -101,21 +123,21 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 		if (!fileName.endsWith(".htm") && !fileName.endsWith(".html"))
 			contentTypeLine = "Content-Type: \r\n";
 	} else {
-		responseString = SimpleHttpServer.HTML_START + responseString + SimpleHttpServer.HTML_END;
+		responseString = Resources.HTML_START + responseString + Resources.HTML_END;
 		contentLengthLine = "Content-Length: " + responseString.length() + "\r\n";
 	}
 
-	outToClient.writeBytes(statusLine);
-	outToClient.writeBytes(serverdetails);
-	outToClient.writeBytes(contentTypeLine);
-	outToClient.writeBytes(contentLengthLine);
-	outToClient.writeBytes("Connection: close\r\n");
-	outToClient.writeBytes("\r\n");
+	outputStream.writeBytes(statusLine);
+	outputStream.writeBytes(serverdetails);
+	outputStream.writeBytes(contentTypeLine);
+	outputStream.writeBytes(contentLengthLine);
+	outputStream.writeBytes("Connection: close\r\n");
+	outputStream.writeBytes("\r\n");
 
-	if (isFile) sendFile(fin, outToClient);
-	else outToClient.writeBytes(responseString);
+	if (isFile) sendFile(fin, outputStream);
+	else outputStream.writeBytes(responseString);
 
-	outToClient.close();
+	outputStream.close();
 }
 
 public void sendFile (FileInputStream fin, DataOutputStream out) throws Exception {
@@ -130,16 +152,7 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 	fin.close();
 }
 
-public static void main (String args[]) throws Exception {
 
-	ServerSocket Server = new ServerSocket (5000, 10, InetAddress.getByName("127.0.0.1"));
-	System.out.println ("TCPServer Waiting for client on port 5000");
-
-	while(true) {
-		Socket connected = Server.accept();
-		(new SimpleHttpServer(connected)).start();
-	}
-}
 
 }
 
