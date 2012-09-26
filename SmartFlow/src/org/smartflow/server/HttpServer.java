@@ -8,9 +8,9 @@ import java.util.*;
 import org.smartflow.Resources;
 import org.smartflow.Settings;
 
-public class SmartHttpServer extends Thread {
+public class HttpServer extends Thread {
 
-private static final SmartHttpServer SmartHttpServerInstance = new SmartHttpServer();
+private static final HttpServer _smartHttpServerInstance = new HttpServer();
 
 private Socket clientSocket;
 private ServerSocket serverSocket;
@@ -20,7 +20,7 @@ private DataOutputStream outputStream;
 
 
 
-private SmartHttpServer() {
+private HttpServer() {
 	
 	try {
 		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
@@ -36,8 +36,8 @@ private SmartHttpServer() {
 }
 
 
-public static SmartHttpServer getInstance() {
-    return SmartHttpServerInstance;
+public static HttpServer getInstance() {
+    return _smartHttpServerInstance;
 }
 
 public void setClient(Socket client) {
