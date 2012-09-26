@@ -5,8 +5,10 @@ public abstract class Resources {
 	public static final String HTML_START =
 			"<html>" +
 			"<title>Smart Kitchen Workflow Engine</title>" +
-			"<body>";
+			"<body>" +
+			"<FORM ACTION=\"get.html\" METHOD=POST>			<P>Please Fill the Registration Form</p><br>Enter Your Name<input type=\"text\" name=\"username\"><br>Enter Your Credit Card Number<input type=\"text\" name=\"credit Number\"><br><input type=\"submit\" value=\"send\"></FORM>";
 
+	
 	public static final String HTML_END =
 			"</body>" +
 			"</html>";

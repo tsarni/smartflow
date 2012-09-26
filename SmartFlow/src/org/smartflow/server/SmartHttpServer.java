@@ -139,7 +139,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 	if (isFile) sendFile(fin, outputStream);
 	else outputStream.writeBytes(responseString);
 
-	outputStream.close();
+	//outputStream.close();
 }
 
 public void sendFile (FileInputStream fin, DataOutputStream out) throws Exception {
@@ -151,7 +151,7 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 		out.write(buffer, 0, bytesRead);
 	}
 
-	fin.close();
+	//fin.close();
 }
 
 
