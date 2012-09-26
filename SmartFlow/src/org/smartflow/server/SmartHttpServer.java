@@ -24,7 +24,7 @@ private SmartHttpServer() {
 	
 	try {
 		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
-		serverSocket.accept();
+		this.setClient(serverSocket.accept());
 	} catch (UnknownHostException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -58,31 +58,31 @@ public void run() {
 		socketReader = new BufferedReader(new InputStreamReader (clientSocket.getInputStream()));
 		outputStream = new DataOutputStream(clientSocket.getOutputStream());
 
-		String requestString = socketReader.readLine();
-		String headerLine = requestString;
+		String clientRequest = socketReader.readLine();
 
-		StringTokenizer tokenizer = new StringTokenizer(headerLine);
+		StringTokenizer tokenizer = new StringTokenizer(clientRequest);
 		String httpMethod = tokenizer.nextToken();
 		String httpQueryString = tokenizer.nextToken();
 
-		StringBuffer responseBuffer = new StringBuffer();
-		responseBuffer.append("<b> This is the HTTP Server Home Page.... </b><BR>");
-		responseBuffer.append("The HTTP Client request is ....<BR>");
+		StringBuffer serverResponse = new StringBuffer();
+		serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
+		serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
 
 		System.out.println("The HTTP request string is ....");
 		
 		while (socketReader.ready())	{
 
 			// Read the HTTP complete HTTP Query
-			responseBuffer.append(requestString + "<BR>");
-			System.out.println(requestString);
-			requestString = socketReader.readLine();
+			serverResponse.append(clientRequest + "<BR>");
+			System.out.println(clientRequest);
+			clientRequest = socketReader.readLine();
 		}
 
 		if (httpMethod.equals("GET")) {
+			
 			if (httpQueryString.equals("/")) {
 				// The default home page
-				sendResponse(200, responseBuffer.toString(), false);
+				sendResponse(200, serverResponse.toString(), false);
 			} else {
 				//This is interpreted as a file name
 				String fileName = httpQueryString.replaceFirst("/", "");
@@ -91,12 +91,14 @@ public void run() {
 					sendResponse(200, fileName, true);
 				}
 				else {
-					sendResponse(404, "<b>The Requested resource not found ...." +
-							"Usage: http://127.0.0.1:5000 or http://127.0.0.1:5000/</b>", false);
+					sendResponse(404, Resources.ERROR_404_MESSAGE, false);
 				}
 			}
+			
+		} else { 
+			sendResponse(404, Resources.ERROR_404_MESSAGE, false);
 		}
-		else sendResponse(404, "<b>The Requested resource not found ...." + "Usage: http://127.0.0.1:5000 or http://127.0.0.1:5000/</b>", false);
+		
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
@@ -105,7 +107,7 @@ public void run() {
 public void sendResponse (int statusCode, String responseString, boolean isFile) throws Exception {
 
 	String statusLine = null;
-	String serverdetails = "Server: Java HTTPServer";
+	String serverdetails = Settings.SERVER_DETAILS;
 	String contentLengthLine = null;
 	String fileName = null;
 	String contentTypeLine = "Content-Type: text/html" + "\r\n";
