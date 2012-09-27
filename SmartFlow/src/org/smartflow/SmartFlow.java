@@ -20,7 +20,6 @@ public class SmartFlow {
 		parseTest();
 		HttpServer.getInstance().run();	
 		
-
 	}
 	
 	private static void parseTest() throws DocumentException {
