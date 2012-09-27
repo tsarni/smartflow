@@ -1,6 +1,6 @@
 package org.smartflow.server.objectserver;
 
-import java.io.*;
+import java.io.Serializable;
 
 class Point2d implements Serializable
 {
