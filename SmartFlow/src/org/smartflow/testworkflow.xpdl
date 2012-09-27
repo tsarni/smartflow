@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xpdl:Package xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="newpkg1" Language="en_US" Name="newpkg1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.yaoqiang.org/schemas/bpmnxpdl_31.xsd">
+    <xpdl:PackageHeader>
+        <xpdl:XPDLVersion>2.1</xpdl:XPDLVersion>
+        <xpdl:Vendor>Yaoqiang</xpdl:Vendor>
+        <xpdl:Created>2012-09-27 10:29:50</xpdl:Created>
+        <xpdl:ModificationDate>2012-09-27 10:34:23</xpdl:ModificationDate>
+    </xpdl:PackageHeader>
+    <xpdl:RedefinableHeader>
+        <xpdl:Codepage>UTF-8</xpdl:Codepage>
+    </xpdl:RedefinableHeader>
+    <xpdl:ConformanceClass BPMNModelPortabilityConformance="NONE" GraphConformance="NON_BLOCKED"/>
+    <xpdl:Pages>
+        <xpdl:Page Id="1" Name="Page 1"/>
+    </xpdl:Pages>
+    <xpdl:Pools>
+        <xpdl:Pool BoundaryVisible="true" Id="newpkg1_wp1" MainPool="false" Name="newpkg1_wp1" Orientation="HORIZONTAL" Process="newpkg1_wp1">
+            <xpdl:Lanes>
+                <xpdl:Lane Id="newpkg1_wp1_lane1" Name="newpkg1_wp1_lane1">
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#993333" Height="200" IsVisible="true" Shape="swimlane" ToolId="Yaoqiang_XE" Width="1023">
+                            <xpdl:Coordinates XCoordinate="26.0" YCoordinate="1.0"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                    <xpdl:Performers>
+                        <xpdl:Performer>newpkg1_wp1_par1</xpdl:Performer>
+                    </xpdl:Performers>
+                </xpdl:Lane>
+            </xpdl:Lanes>
+            <xpdl:NodeGraphicsInfos>
+                <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#993333" Height="200" IsVisible="true" Shape="swimlane" ToolId="Yaoqiang_XE" Width="1049">
+                    <xpdl:Coordinates XCoordinate="20.0" YCoordinate="20.0"/>
+                </xpdl:NodeGraphicsInfo>
+            </xpdl:NodeGraphicsInfos>
+        </xpdl:Pool>
+    </xpdl:Pools>
+    <xpdl:WorkflowProcesses>
+        <xpdl:WorkflowProcess AccessLevel="PUBLIC" EnableInstanceCompensation="false" Id="newpkg1_wp1" Name="testworkflow" ProcessType="None" Status="None" SuppressJoinFailure="false">
+            <xpdl:ProcessHeader>
+                <xpdl:Created>2012-09-27 10:29:57</xpdl:Created>
+            </xpdl:ProcessHeader>
+            <xpdl:RedefinableHeader>
+                <xpdl:Codepage>UTF-8</xpdl:Codepage>
+            </xpdl:RedefinableHeader>
+            <xpdl:Participants>
+                <xpdl:Participant Id="newpkg1_wp1_par1" Name="newpkg1_wp1_par1">
+                    <xpdl:ParticipantType Type="ROLE"/>
+                    <xpdl:ExternalReference location="http://"/>
+                </xpdl:Participant>
+            </xpdl:Participants>
+            <xpdl:Activities>
+                <xpdl:Activity CompletionQuantity="1" Id="newpkg1_wp1_act1" IsATransaction="false" IsForCompensation="false" Name="start" StartQuantity="1" Status="None">
+                    <xpdl:Event>
+                        <xpdl:StartEvent Trigger="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#33FF00" Height="35" IsVisible="true" LaneId="newpkg1_wp1_lane1" Shape="startEvent" ToolId="Yaoqiang_XE" Width="35">
+                            <xpdl:Coordinates XCoordinate="89.0" YCoordinate="79.0"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity CompletionQuantity="1" Id="newpkg1_wp1_act2" IsATransaction="false" IsForCompensation="false" Name="step1" StartQuantity="1" Status="None">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>newpkg1_wp1_par1</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#99FF99" Height="55" IsVisible="true" LaneId="newpkg1_wp1_lane1" Shape="taskNo" ToolId="Yaoqiang_XE" Width="85">
+                            <xpdl:Coordinates XCoordinate="155.0" YCoordinate="50.0"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity CompletionQuantity="1" Id="newpkg1_wp1_act3" IsATransaction="false" IsForCompensation="false" Name="step2" StartQuantity="1" Status="None">
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>newpkg1_wp1_par1</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#99FF99" Height="55" IsVisible="true" LaneId="newpkg1_wp1_lane1" Shape="taskNo" ToolId="Yaoqiang_XE" Width="85">
+                            <xpdl:Coordinates XCoordinate="289.0" YCoordinate="109.0"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity CompletionQuantity="1" Id="newpkg1_wp1_act4" IsATransaction="false" IsForCompensation="false" StartQuantity="1" Status="None">
+                    <xpdl:Event>
+                        <xpdl:EndEvent Result="None"/>
+                    </xpdl:Event>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="#000000" FillColor="#FF0000" Height="35" IsVisible="true" LaneId="newpkg1_wp1_lane1" Shape="endEvent" ToolId="Yaoqiang_XE" Width="35">
+                            <xpdl:Coordinates XCoordinate="484.0" YCoordinate="119.0"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+            </xpdl:Activities>
+            <xpdl:Transitions>
+                <xpdl:Transition From="newpkg1_wp1_act3" Id="newpkg1_wp1_tra1" To="newpkg1_wp1_act4">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo Style="defaultEdge" ToolId="Yaoqiang_XE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="newpkg1_wp1_act2" Id="newpkg1_wp1_tra2" To="newpkg1_wp1_act3">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo Style="defaultEdge" ToolId="Yaoqiang_XE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="newpkg1_wp1_act1" Id="newpkg1_wp1_tra3" To="newpkg1_wp1_act2">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo Style="defaultEdge" ToolId="Yaoqiang_XE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+            </xpdl:Transitions>
+        </xpdl:WorkflowProcess>
+    </xpdl:WorkflowProcesses>
+    <xpdl:ExtendedAttributes>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL" Value="Yaoqiang XPDL Editor"/>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="2.1.21-C-20101015-2231"/>
+        <xpdl:ExtendedAttribute Name="YqXE_CONFIGURATION" Value="default"/>
+    </xpdl:ExtendedAttributes>
+</xpdl:Package>
