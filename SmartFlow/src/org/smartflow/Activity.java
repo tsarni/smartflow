@@ -1,6 +1,6 @@
 package org.smartflow;
 
-public class ProcessActivity {
+public class Activity {
 	
 	private String id;
 	private String completionQuantity;
@@ -10,11 +10,11 @@ public class ProcessActivity {
 	private boolean isForCompensation;
 	private int startQuantity;
 	
-	private StartEvent event;
-	private ProcessTransition transition;
+	private MessageEvent event;
+	private SequenceFlow transition;
 	
 	
-	public ProcessActivity () {
+	public Activity () {
 		
 	}
 }

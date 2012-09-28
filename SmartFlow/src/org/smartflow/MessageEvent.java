@@ -1,6 +1,8 @@
 package org.smartflow;
 
-public class StartEvent {
+
+
+public class MessageEvent {
 	
 	private String trigger;
 
