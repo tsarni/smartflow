@@ -10,7 +10,6 @@ public class Activity {
 	private boolean isForCompensation;
 	private int startQuantity;
 	
-	private MessageEvent event;
 	private SequenceFlow transition;
 	
 	

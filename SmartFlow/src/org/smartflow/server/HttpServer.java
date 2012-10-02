@@ -14,6 +14,7 @@ import java.net.URLDecoder;
 import java.net.UnknownHostException;
 import java.util.StringTokenizer;
 
+import org.smartflow.MessageHandler;
 import org.smartflow.Resources;
 import org.smartflow.Settings;
 
@@ -30,6 +31,9 @@ private DataOutputStream outputStream;
 
 
 private HttpServer() {
+	
+	
+
 	
 	try {
 		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));

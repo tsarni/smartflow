@@ -15,7 +15,7 @@ public class SmartFlow {
 
 
 	public static void main(String[] args) throws Exception, IOException {
-
+		
 		System.out.println ("TCPServer Waiting for client on port 5000");
 		parseTest();
 		HttpServer.getInstance().run();	
@@ -32,15 +32,15 @@ public class SmartFlow {
 			 
 		System.out.println("Root Element: " + PACKAGE.getName());
 			 
-		for (Iterator i1 = PACKAGE.elementIterator("WorkflowProcesses"); i1.hasNext();) {
+		for (Iterator<?> i1 = PACKAGE.elementIterator("WorkflowProcesses"); i1.hasNext();) {
 			
 			Element WORKFLOWPROCESSES = (Element) i1.next();
 		
-			for (Iterator i2 = WORKFLOWPROCESSES.elementIterator("WorkflowProcess");i2.hasNext();) {
+			for (Iterator<?> i2 = WORKFLOWPROCESSES.elementIterator("WorkflowProcess");i2.hasNext();) {
 				
 				Element WORKFLOWPROCESS = (Element) i2.next();
 				
-				for (Iterator i3 = WORKFLOWPROCESS.elementIterator(); i3.hasNext();) {
+				for (Iterator<?> i3 = WORKFLOWPROCESS.elementIterator(); i3.hasNext();) {
 					Element element = (Element) i3.next();
 					System.out.println(element.getName() );
 		
