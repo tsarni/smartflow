@@ -8,17 +8,24 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+
 import org.smartflow.server.HttpServer;
 
 
-public class SmartFlow {
+public class SmartFlow  {
 
 
 	public static void main(String[] args) throws Exception, IOException {
 		
 		System.out.println ("TCPServer Waiting for client on port 5000");
-		parseTest();
-		HttpServer.getInstance().run();	
+		WorkflowEngine.getInstance();
+		//parseTest();
+		//HttpServer.getInstance().run();
+		HttpServer httpServer = new HttpServer();
+		httpServer.run();
+		
+		
+		
 		
 	}
 	
@@ -49,4 +56,6 @@ public class SmartFlow {
 			}
 		}
 	}
+
+	
 }

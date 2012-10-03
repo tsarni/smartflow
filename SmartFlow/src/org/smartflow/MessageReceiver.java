@@ -1,5 +1,5 @@
 package org.smartflow;
 
-public interface MessageListener {
+public interface MessageReceiver {
 	public void messageReceived();
 }

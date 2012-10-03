@@ -5,22 +5,20 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URLDecoder;
-import java.net.UnknownHostException;
 import java.util.StringTokenizer;
 
 import org.smartflow.MessageHandler;
+import org.smartflow.MessageSender;
 import org.smartflow.Resources;
 import org.smartflow.Settings;
 
-public class HttpServer extends Thread {
+public class HttpServer extends Thread implements MessageSender{
 
-private static final HttpServer _smartHttpServerInstance = new HttpServer();
 
 private Socket clientSocket;
 private ServerSocket serverSocket;
@@ -29,28 +27,8 @@ private BufferedReader socketReader;
 private DataOutputStream outputStream;
 
 
-
-private HttpServer() {
-	
-	
-
-	
-	try {
-		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
-		this.setClient(serverSocket.accept());
-	} catch (UnknownHostException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	
-}
-
-
-public static HttpServer getInstance() {
-    return _smartHttpServerInstance;
+public HttpServer() {
+	MessageHandler.getInstance().registerSender(this);
 }
 
 public void setClient(Socket client) {
@@ -64,9 +42,11 @@ public Socket getClient() {
 public void run() {
 
 	try {
-
-		System.out.println( "The Client "+
-		clientSocket.getInetAddress() + ":" + clientSocket.getPort() + " is connected");
+		
+		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
+		this.setClient(serverSocket.accept());
+	
+		System.out.println( "The Client "+ clientSocket.getInetAddress() + ":" + clientSocket.getPort() + " is connected");
 
 		socketReader = new BufferedReader(new InputStreamReader (clientSocket.getInputStream()));
 		outputStream = new DataOutputStream(clientSocket.getOutputStream());
@@ -89,13 +69,20 @@ public void run() {
 			serverResponse.append(clientRequest + "<BR>");
 			System.out.println(clientRequest);
 			clientRequest = socketReader.readLine();
+			
+			
+			
 		}
-
+//		while(clientSocket.isConnected()) {
+//			System.out.println(clientRequest);
+//		}
+		
 		if (httpMethod.equals("GET")) {
 			
 			if (httpQueryString.equals("/")) {
 				// The default home page
 				sendResponse(200, serverResponse.toString(), false);
+				
 			} else {
 				//This is interpreted as a file name
 				String fileName = httpQueryString.replaceFirst("/", "");
@@ -109,7 +96,7 @@ public void run() {
 			}
 			
 		} else { 
-			sendResponse(404, Resources.ERROR_404_MESSAGE, false);
+			MessageHandler.getInstance().messageReceived();
 		}
 		
 	} catch (Exception e) {
@@ -166,6 +153,18 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 
 	//fin.close();
 }
+
+@Override
+public void sendMessage(String msg) {
+	try {
+		this.sendResponse(404, msg, false);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+
 
 
 
