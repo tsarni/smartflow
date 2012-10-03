@@ -2,6 +2,7 @@ package org.smartflow;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.util.Iterator;
 
 import org.dom4j.Document;
@@ -20,7 +21,6 @@ public class SmartFlow  {
 		System.out.println ("TCPServer Waiting for client on port 5000");
 		WorkflowEngine.getInstance();
 		//parseTest();
-		//HttpServer.getInstance().run();
 		HttpServer httpServer = new HttpServer();
 		httpServer.run();
 		
