@@ -106,6 +106,7 @@ public void run() {
 					//This is interpreted as a file name
 					String fileName = httpQueryString.replaceFirst("/", "");
 					fileName = URLDecoder.decode(fileName);
+					
 					if (new File(fileName).isFile()){
 						sendResponse(200, fileName, true);
 					}
