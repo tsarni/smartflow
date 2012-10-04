@@ -43,7 +43,7 @@ public class SmartFlowParser {
 							Activity activity = new Activity();
 							activity.setId(ACTIVITY.attributeValue("Id"));
 							activity.setName(ACTIVITY.attributeValue("Name"));
-							WorkflowEngine.getInstance().
+							WorkflowEngine.getInstance().storeActivity(activity);
 							//activity.setDescription(ACTIVITY.attributeValue("Description"));
 						}
 						
