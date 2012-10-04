@@ -38,6 +38,7 @@ public void initialize() {
 	
 	try {
 		this.serverSocket = new ServerSocket (Settings.SERVER_PORT, 10, InetAddress.getByName(Settings.LOCAL_HOST));
+		
 	} catch (UnknownHostException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
@@ -68,46 +69,45 @@ public void run() {
 		try {
 			
 			registerClient(serverSocket.accept());
+			this.socketReader = new BufferedReader(new InputStreamReader (clientSocket.getInputStream()));
+			this.outputStream = new DataOutputStream(clientSocket.getOutputStream());
 			
 			
-			socketReader = new BufferedReader(new InputStreamReader (clientSocket.getInputStream()));
-			outputStream = new DataOutputStream(clientSocket.getOutputStream());
-
 			String clientRequest = socketReader.readLine();
 
 			StringTokenizer tokenizer = new StringTokenizer(clientRequest);
 			String httpMethod = tokenizer.nextToken();
 			String httpQueryString = tokenizer.nextToken();
 
-			StringBuffer serverResponse = new StringBuffer();
-			serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
-			serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
-//
-//			System.out.println("The HTTP request string is ....");
-//			
-//			while (socketReader.ready())	{
-//
-//				// Read the HTTP complete HTTP Query
-//				serverResponse.append(clientRequest + "<BR>");
-//				System.out.println(clientRequest);
-//				clientRequest = socketReader.readLine();
-//				
-//				
-//				
-//			}
+			//StringBuffer serverResponse = new StringBuffer();
+			//serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
+			//serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
+			System.out.println(clientRequest);
+
+			//System.out.println("The HTTP request string is ....");
+			
+			while (socketReader.ready())	{ //is true while buffer is not empty
+
+				// Read the HTTP complete HTTP Query
+				//serverResponse.append(clientRequest + "<BR>");
+				
+				clientRequest = socketReader.readLine();
+				System.out.println(clientRequest);
+	
+			}
 			
 			if (httpMethod.equals("GET")) {
 				
 				if (httpQueryString.equals("/")) {
 					// The default home page
-					sendResponse(200, serverResponse.toString(), false);
+					//sendResponse(200, serverResponse.toString(), false);
 					
 				} else {
 					//This is interpreted as a file name
 					String fileName = httpQueryString.replaceFirst("/", "");
 					fileName = URLDecoder.decode(fileName);
-					
-					if (new File(fileName).isFile()){
+
+					if (new File(fileName).isFile()){ //this is relative path
 						sendResponse(200, fileName, true);
 					}
 					else {
@@ -116,7 +116,7 @@ public void run() {
 				}
 				
 			} else if (httpMethod.equals("POST")) { 
-				MessageHandler.getInstance().messageReceived();
+				MessageHandler.getInstance().messageReceived("replace this text");
 			} else {
 				
 			}
@@ -166,7 +166,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 	if (isFile) sendFile(fin, outputStream);
 	else outputStream.writeBytes(responseString);
 
-	//outputStream.close();
+	outputStream.close();
 }
 
 public void sendFile (FileInputStream fin, DataOutputStream out) throws Exception {
@@ -178,7 +178,7 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 		out.write(buffer, 0, bytesRead);
 	}
 
-	//fin.close();
+	fin.close();
 }
 
 @Override

@@ -28,10 +28,10 @@ public class MessageHandler {
 		this.registeredSenders.add(sender);
 	}
 	
-	public void messageReceived() {
+	public void messageReceived(String msg) {
 		
 		for (MessageReceiver client : this.registeredReceivers) {
-			client.messageReceived();
+			client.messageReceived(msg);
 		}
 	}
 	

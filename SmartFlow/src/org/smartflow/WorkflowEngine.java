@@ -16,8 +16,9 @@ public class WorkflowEngine implements MessageReceiver{
 	}
 
 	@Override
-	public void messageReceived() {
+	public void messageReceived(String msg) {
 		System.out.print("Event: Message Received");
+		System.out.print("Message: " + msg);
 		MessageHandler.getInstance().sendMessage("Onnistuuko näin?");
 	}
 	
