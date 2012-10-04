@@ -1,6 +1,7 @@
 package org.smartflow;
 
 import java.util.HashMap;
+import java.util.Timer;
 
 
 
@@ -21,7 +22,14 @@ public class WorkflowEngine implements MessageReceiver{
 	public void storeActivity(Activity _activity) {
 		activities.put(_activity, _activity.getId());
 	}
-
+	
+	public void startProcess() {
+		//Timer timer = new Timer();
+		//timer.scheduleAtFixedRate(new ScheduledTask(Settings.ACTIVITY_DURATION), 0, Settings.ACTIVITY_DURATION);
+		Scheduler scheduler = new Scheduler(300);
+		scheduler.run();
+	}
+	
 	@Override
 	public void messageReceived(String _msg) {
 		System.out.print("Event: Message Received");
