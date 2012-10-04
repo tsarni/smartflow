@@ -7,6 +7,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.xml.sax.Attributes;
 
 public class SmartFlowParser {
 	
@@ -36,9 +37,11 @@ public class SmartFlowParser {
 					Element ACTIVITIES = (Element) i3.next();
 					
 					for (Iterator<?> i4 = ACTIVITIES.elementIterator(); i4.hasNext();) {
-						Element element = (Element) i4.next();
-						System.out.println(element.getName() );
-						
+						Element ACTIVITY = (Element) i4.next();
+						for (Iterator<?> i5 = ACTIVITY.attributeIterator(); i5.hasNext();) {
+							Attributes  attrs = (Attributes) i5.next();
+							System.out.println(attrs.getValue("Name"));
+						}	
 					}
 
 				}
