@@ -38,10 +38,16 @@ public class SmartFlowParser {
 					
 					for (Iterator<?> i4 = ACTIVITIES.elementIterator(); i4.hasNext();) {
 						Element ACTIVITY = (Element) i4.next();
-						for (Iterator<?> i5 = ACTIVITY.attributeIterator(); i5.hasNext();) {
-							Attributes  attrs = (Attributes) i5.next();
-							System.out.println(attrs.getValue("Name"));
-						}	
+						if(ACTIVITY.attributeValue("Name") != null) {
+							System.out.println(ACTIVITY.attributeValue("Name"));
+							Activity activity = new Activity();
+							activity.setId(ACTIVITY.attributeValue("Id"));
+							activity.setName(ACTIVITY.attributeValue("Name"));
+							WorkflowEngine.getInstance().
+							//activity.setDescription(ACTIVITY.attributeValue("Description"));
+						}
+						
+
 					}
 
 				}
