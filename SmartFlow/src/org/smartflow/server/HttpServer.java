@@ -19,7 +19,7 @@ import org.smartflow.MessageSender;
 import org.smartflow.Resources;
 import org.smartflow.Settings;
 
-public class HttpServer extends Thread implements MessageSender{
+public class HttpServer implements MessageSender,Runnable{
 
 private boolean serverIsRunning = true;
 private Socket clientSocket;
@@ -27,11 +27,15 @@ private ServerSocket serverSocket;
 private BufferedReader socketReader;
 private DataOutputStream outputStream;
 
+private Thread serverThread;;
+
 
 public HttpServer() {
 	
+	this.serverThread = new Thread(this);
 	MessageHandler.getInstance().registerSender(this);
 	this.initialize();
+	serverThread.start();
 }
 
 public void initialize() {
@@ -46,6 +50,7 @@ public void initialize() {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+
 	
 }
 
@@ -79,9 +84,9 @@ public void run() {
 			String httpMethod = tokenizer.nextToken();
 			String httpQueryString = tokenizer.nextToken();
 
-			//StringBuffer serverResponse = new StringBuffer();
-			//serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
-			//serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
+			StringBuffer serverResponse = new StringBuffer();
+			serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
+			serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
 			System.out.println(clientRequest);
 
 			//System.out.println("The HTTP request string is ....");
@@ -100,7 +105,7 @@ public void run() {
 				
 				if (httpQueryString.equals("/")) {
 					// The default home page
-					//sendResponse(200, serverResponse.toString(), false);
+					sendResponse(200, serverResponse.toString(), false);
 					
 				} else {
 					//This is interpreted as a file name
@@ -184,7 +189,9 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 @Override
 public void sendMessage(String msg) {
 	try {
-		this.sendResponse(404, msg, false);
+		if(this.clientSocket != null && this.clientSocket.isConnected()) {
+			this.sendResponse(404, msg, false);
+		}
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

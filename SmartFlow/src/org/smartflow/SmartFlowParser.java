@@ -38,17 +38,44 @@ public class SmartFlowParser {
 					
 					for (Iterator<?> i4 = ACTIVITIES.elementIterator(); i4.hasNext();) {
 						Element ACTIVITY = (Element) i4.next();
-						if(ACTIVITY.attributeValue("Name") != null) {
-							System.out.println(ACTIVITY.attributeValue("Name"));
+						
+						if(ACTIVITY.attributeValue("Id") != null) {
+							
 							Activity activity = new Activity();
 							activity.setId(ACTIVITY.attributeValue("Id"));
 							activity.setName(ACTIVITY.attributeValue("Name"));
+							
+							if(ACTIVITY.element("Event") != null) {
+								
+								if(ACTIVITY.element("Event").element("StartEvent") != null) {
+									activity.isStartActivity = true;
+									WorkflowEngine.getInstance().setStartId(ACTIVITY.attributeValue("Id"));
+								}
+								
+								if(ACTIVITY.element("Event").element("EndEvent") != null) {
+									activity.isEndActivity = true;
+								}
+							}
+							
 							WorkflowEngine.getInstance().storeActivity(activity);
 							//activity.setDescription(ACTIVITY.attributeValue("Description"));
 							
 						}
 						
+						
+						
 
+					}
+
+				}
+				
+				for (Iterator<?> i6 = WORKFLOWPROCESS.elementIterator("Transitions"); i6.hasNext();) {
+					Element TRANSITIONS = (Element) i6.next();
+					
+					for (Iterator<?> i7 = TRANSITIONS.elementIterator(); i7.hasNext();) {
+						Element TRANSITION = (Element) i7.next();
+						
+						WorkflowEngine.getInstance().storeTransition(TRANSITION.attributeValue("From"), TRANSITION.attributeValue("To"));
 					}
 
 				}

@@ -15,7 +15,7 @@ public class Scheduler extends Thread {
 		
 		int _elapsed = 0;
 		
-		while(this.duration > _elapsed)
+		while(!interrupted())
 		
 			for(int m = 0; m < 60 ;m++) {
 				
@@ -32,7 +32,7 @@ public class Scheduler extends Thread {
 						min = Integer.toString(m);
 					}
 						
-					System.out.println(min + ":" + sec);
+					//System.out.println(min + ":" + sec);
 					
 					try{
                 	 Scheduler.sleep(1000);
@@ -41,7 +41,8 @@ public class Scheduler extends Thread {
 					}
 					
 					_elapsed++;
-					System.out.println(_elapsed);
+					WorkflowEngine.getInstance().goToNextStep();
+					//System.out.println(_elapsed);
              }
          }
 	}
