@@ -18,6 +18,7 @@ import org.smartflow.MessageHandler;
 import org.smartflow.MessageSender;
 import org.smartflow.Resources;
 import org.smartflow.Settings;
+import org.smartflow.WorkflowEngine;
 
 public class HttpServer implements MessageSender,Runnable{
 
@@ -91,21 +92,22 @@ public void run() {
 
 			//System.out.println("The HTTP request string is ....");
 			
-			while (socketReader.ready())	{ //is true while buffer is not empty
-
-				// Read the HTTP complete HTTP Query
-				//serverResponse.append(clientRequest + "<BR>");
-				
-				clientRequest = socketReader.readLine();
-				System.out.println(clientRequest);
-	
-			}
+//			while (socketReader.ready())	{ //is true while buffer is not empty
+//
+//				// Read the HTTP complete HTTP Query
+//				//serverResponse.append(clientRequest + "<BR>");
+//				
+//				clientRequest = socketReader.readLine();
+//				System.out.println(clientRequest);
+//	
+//			}
 			
 			if (httpMethod.equals("GET")) {
 				
 				if (httpQueryString.equals("/")) {
 					// The default home page
 					sendResponse(200, serverResponse.toString(), false);
+					
 					
 				} else {
 					//This is interpreted as a file name
@@ -121,12 +123,14 @@ public void run() {
 				}
 				
 			} else if (httpMethod.equals("POST")) { 
-				MessageHandler.getInstance().messageReceived("replace this text");
+				//MessageHandler.getInstance().messageReceived("replace this text");
+				WorkflowEngine.getInstance().startProcess();
+				
 			} else {
 				
 			}
 			
-			this.clientSocket.close();
+			//this.clientSocket.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -170,7 +174,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 
 	if (isFile) sendFile(fin, outputStream);
 	else outputStream.writeBytes(responseString);
-
+	WorkflowEngine.getInstance().startProcess();
 	outputStream.close();
 }
 
@@ -183,14 +187,26 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 		out.write(buffer, 0, bytesRead);
 	}
 
-	fin.close();
+	//fin.close();
+}
+private void broadcastToClients(String msg) throws IOException {
+
+	outputStream.writeBytes(msg);
+	outputStream.writeBytes("\r\n");
+	outputStream.close();
+	
+	
 }
 
 @Override
 public void sendMessage(String msg) {
 	try {
-		if(this.clientSocket != null && this.clientSocket.isConnected()) {
-			this.sendResponse(404, msg, false);
+		if(this.clientSocket != null) {
+			if(this.clientSocket.isConnected()) {
+				//this.sendResponse(404, msg, false);
+				this.broadcastToClients(msg);
+			}
+			
 		}
 	} catch (Exception e) {
 		// TODO Auto-generated catch block

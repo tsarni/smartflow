@@ -13,12 +13,13 @@ public class SmartFlow  {
 		
 		System.out.println ("TCPServer Waiting for client on port 5000");
 
-		HttpServer httpServer = new HttpServer();
+		
 		//startHttpServer();
 	
 		SmartFlowParser sfParser = new SmartFlowParser();
 		sfParser.parseXpdlFile("Smartflow.xpdl");
-		WorkflowEngine.getInstance().startProcess();
+		//WorkflowEngine.getInstance().startProcess();
+		HttpServer httpServer = new HttpServer();
 		
 		
 		

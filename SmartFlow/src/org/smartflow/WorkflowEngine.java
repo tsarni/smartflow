@@ -17,7 +17,7 @@ public class WorkflowEngine implements MessageReceiver{
 	
 	private WorkflowEngine() {
 		MessageHandler.getInstance().registerReceiver(this);
-		MessageHandler.getInstance().registerReceiver(this);
+		
 	}
 	
 	public static WorkflowEngine getInstance() {
@@ -59,11 +59,14 @@ public class WorkflowEngine implements MessageReceiver{
 		
 		if(this.getActivity(this.currentStepId).isEndActivity) {
 			System.out.println("End");
-			this.scheduler.interrupt();
+			this.scheduler.isStopped = true;
 		} else {
 			this.currentStepId = this.transitions.get(this.currentStepId);
-			MessageHandler.getInstance().sendMessage(this.getActivity(this.currentStepId).getName());
-			System.out.println(this.getActivity(this.currentStepId).getName());
+			if(this.getActivity(this.currentStepId).getName() != null) {
+				MessageHandler.getInstance().sendMessage(this.getActivity(this.currentStepId).getName());
+				System.out.println(this.getActivity(this.currentStepId).getName());
+			}
+			
 		}
 		
 	}

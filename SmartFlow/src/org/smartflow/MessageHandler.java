@@ -3,7 +3,6 @@ package org.smartflow;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.smartflow.server.HttpServer;
 
 public class MessageHandler {
 	

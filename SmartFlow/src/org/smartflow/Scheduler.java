@@ -5,6 +5,7 @@ public class Scheduler extends Thread {
 	private int duration;
 	private String min;
 	private String sec;
+	public boolean isStopped = false;
 	
 	
 	public Scheduler (int duration) {
@@ -15,7 +16,7 @@ public class Scheduler extends Thread {
 		
 		int _elapsed = 0;
 		
-		while(!interrupted())
+		while(!isStopped)
 		
 			for(int m = 0; m < 60 ;m++) {
 				
@@ -41,6 +42,7 @@ public class Scheduler extends Thread {
 					}
 					
 					_elapsed++;
+					if(this.isStopped) break;
 					WorkflowEngine.getInstance().goToNextStep();
 					//System.out.println(_elapsed);
              }
