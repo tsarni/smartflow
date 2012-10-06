@@ -116,6 +116,7 @@ public void run() {
 
 					if (new File(fileName).isFile()){ //this is relative path
 						sendResponse(200, fileName, true);
+						
 					}
 					else {
 						sendResponse(404, Resources.ERROR_404_MESSAGE, false);
@@ -123,14 +124,14 @@ public void run() {
 				}
 				
 			} else if (httpMethod.equals("POST")) { 
-				//MessageHandler.getInstance().messageReceived("replace this text");
-				WorkflowEngine.getInstance().startProcess();
+				MessageHandler.getInstance().messageReceived("replace this text");
+				//WorkflowEngine.getInstance().startProcess();
 				
 			} else {
 				
 			}
 			
-			//this.clientSocket.close();
+			this.clientSocket.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -174,8 +175,8 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 
 	if (isFile) sendFile(fin, outputStream);
 	else outputStream.writeBytes(responseString);
-	WorkflowEngine.getInstance().startProcess();
-	outputStream.close();
+	//WorkflowEngine.getInstance().startProcess();
+	//outputStream.close();
 }
 
 public void sendFile (FileInputStream fin, DataOutputStream out) throws Exception {
