@@ -4,7 +4,8 @@ public class Activity {
 	
 	private String name = "";
 	private String id = "";
-	private String description;
+	private String description = "";
+	private String imagePath = "";
 	public boolean isStartActivity = false;
 	public boolean isEndActivity = false;
 	
@@ -17,6 +18,21 @@ public class Activity {
 		this.name = name;
 	}
 	
+	public String getImagePath() {
+		return imagePath;
+	}
+
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
 	public String getName() {
 		return name;
 	}
@@ -28,9 +44,12 @@ public class Activity {
 	public String getId() {
 		return this.id;
 	}
-
-	public void setDescription(String description) {
-		this.description = description;
+	
+	public String getDescription() {
+		return this.description;
 	}
+
+
+	
 
 }

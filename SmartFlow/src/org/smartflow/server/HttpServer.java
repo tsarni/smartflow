@@ -95,7 +95,7 @@ public void run() {
 //			while (socketReader.ready())	{ //is true while buffer is not empty
 //
 //				// Read the HTTP complete HTTP Query
-//				//serverResponse.append(clientRequest + "<BR>");
+//				serverResponse.append(clientRequest + "<BR>");
 //				
 //				clientRequest = socketReader.readLine();
 //				System.out.println(clientRequest);
@@ -124,11 +124,18 @@ public void run() {
 				}
 				
 			} else if (httpMethod.equals("POST")) { 
-				MessageHandler.getInstance().messageReceived("replace this text");
-				//WorkflowEngine.getInstance().startProcess();
+				
+				String action = httpQueryString.replaceFirst("/", "");
+				 
+				if(action.equals("PREVIOUS")) {
+					MessageHandler.getInstance().messageReceived("Previous");
+				}
+				if(action.equals("NEXT")) {
+					MessageHandler.getInstance().messageReceived("Next");
+				}
 				
 			} else {
-				
+				System.out.println(httpMethod.toString());
 			}
 			
 			//this.clientSocket.close();
@@ -175,7 +182,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 
 	if (isFile) sendFile(fin, outputStream);
 	else outputStream.writeBytes(responseString);
-	//WorkflowEngine.getInstance().startProcess();
+	
 	//outputStream.close();
 }
 
@@ -190,29 +197,18 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 
 	//fin.close();
 }
-private void broadcastToClients(String msg) throws IOException {
 
-	outputStream.writeBytes(msg);
-	outputStream.writeBytes("\r\n");
-	outputStream.close();
-	
-	
-}
+
 
 @Override
 public void sendMessage(String msg) {
 	try {
-		if(this.clientSocket != null) {
-			if(this.clientSocket.isConnected()) {
-				//this.sendResponse(404, msg, false);
-				this.broadcastToClients(msg);
-			}
-			
-		}
+		sendResponse(200, msg, false);
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+
 	
 }
 

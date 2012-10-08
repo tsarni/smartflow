@@ -69,6 +69,7 @@
             </xpdl:ProcessHeader>
             <xpdl:Activities>
                 <xpdl:Activity Id="Coffee_Making_act1" Name="Take the coffee pot">
+                    <xpdl:Description>Ota kahvipannu käteesi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -78,6 +79,7 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_name" Value="COFFEE_POT"/>
                         <xpdl:ExtendedAttribute Name="object_location" Value="ORIGIN"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_pot.png&quot;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -944,7 +946,7 @@
     </xpdl:WorkflowProcesses>
     <xpdl:ExtendedAttributes>
         <xpdl:ExtendedAttribute Name="EDITING_TOOL" Value="Together Workflow Editor"/>
-        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="4.6-1-20120816-2300-TAB-2.1-1"/>
+        <xpdl:ExtendedAttribute Name="EDITING_TOOL_VERSION" Value="4.5-1-20120518-1200-TAB-2.0-1"/>
         <xpdl:ExtendedAttribute Name="JaWE_CONFIGURATION" Value="default"/>
     </xpdl:ExtendedAttributes>
 </xpdl:Package>

@@ -24,11 +24,7 @@ public class SmartFlow  {
 		
 		
 	}
-	
-	private void startHttpServer() {
-		//Thread serverThread = new Thread();
-	}
-	
+
 	
 
 	

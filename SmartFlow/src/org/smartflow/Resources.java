@@ -20,9 +20,9 @@ public abstract class Resources {
 		      "}, 5000);" +
 		    "}" +
 
-		    "$(document).ready(function() {" +
-		      "make_call();" +
-		    "});"+
+//		    "$(document).ready(function() {" +
+//		      "make_call();" +
+//		    "});"+
 		    
 		    "function httpGet(theUrl) {"+
 		    	"var xmlHttp = null;"+
@@ -50,14 +50,17 @@ public abstract class Resources {
 		    "</script>" +
 		    "<head>" +
 			"<body>" +
-			"<FORM ACTION=\"get.html\" METHOD=POST>			" +
-			"<P>Please l the Registration Form</p><br>Enter Your Name<input type=\"text\" name=\"username\"><br>" +
-			"Enter Your Credit Card Number<input type=\"text\" name=\"credit Number\"><br>" +
-			"<input type=\"submit\" value=\"send\"></FORM>";
-
+		    "<div align=\"center\">";
+		    
 	
 	public static final String HTML_END =
-			"</body>" +
+			"<table><tr>" +
+			"<td><FORM ACTION=\"PREVIOUS\" METHOD=POST>" +
+			"<input type=\"submit\" value=\"Previous\"></FORM></td>" +
+			"<td><FORM ACTION=\"NEXT\" METHOD=POST>" +
+			"<input type=\"submit\" value=\"Next\"></FORM></td>" +
+			"</tr></table>" +
+			"</div></body>" +
 			"</html>";
 	
 	public static final String RESPONSE_WELCOME_MESSAGE = "<b> This is the HTTP Server Home Page.... </b><BR>";
