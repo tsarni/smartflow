@@ -11,7 +11,9 @@ public abstract class Resources {
 			"<script type=\"text/javascript\" charset=\"utf-8\">" +
 		    "function make_call()"+
 		    "{"+
-		     	"httpGet(\"get.html\");"+
+		     	
+  
+  			"document.write.textout = httpGet(\"get.html\");"+
 
 		      "setTimeout(function(){"+ 
 		        "make_call();" +
@@ -22,18 +24,22 @@ public abstract class Resources {
 		      "make_call();" +
 		    "});"+
 		    
-		    "function httpGet(theUrl)"+
-		    "{"+
-		    "var xmlHttp = null;"+
+		    "function httpGet(theUrl) {"+
+		    	"var xmlHttp = null;"+
+		    	"xmlHttp = new XMLHttpRequest();" +
+		    	
+//				"xmlhttp.onreadystatechange = function () {"+
+//					"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
+//				"};" +
 		    
-		    "xmlHttp = new XMLHttpRequest();" +
-		    "xmlHttp.open( \"GET\", theUrl, true );"+
-		    "xmlHttp.onreadystatechange = useHttpResponse();" +
-		    "xmlHttp.send( null );" +
-		    //"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
-
-		    "return xmlHttp.responseText;" +
+		    	"xmlHttp.open( \"GET\", theUrl, true );"+
+		    	// "xmlHttp.onreadystatechange = useHttpResponse();" +
+		    	"xmlHttp.send( null );" +
+		    	//"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
+		    	
+		    	"return xmlHttp.responseText;" +
 		    "}" +
+		    
 		    "function useHttpResponse() {" +
 		    	"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
 		    	 // "if (http.readyState == 4) {"+
@@ -45,7 +51,7 @@ public abstract class Resources {
 		    "<head>" +
 			"<body>" +
 			"<FORM ACTION=\"get.html\" METHOD=POST>			" +
-			"<P>Please Fill the Registration Form</p><br>Enter Your Name<input type=\"text\" name=\"username\"><br>" +
+			"<P>Please l the Registration Form</p><br>Enter Your Name<input type=\"text\" name=\"username\"><br>" +
 			"Enter Your Credit Card Number<input type=\"text\" name=\"credit Number\"><br>" +
 			"<input type=\"submit\" value=\"send\"></FORM>";
 

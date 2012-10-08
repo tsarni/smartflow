@@ -131,7 +131,7 @@ public void run() {
 				
 			}
 			
-			this.clientSocket.close();
+			//this.clientSocket.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
