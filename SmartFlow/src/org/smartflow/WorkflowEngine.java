@@ -68,17 +68,18 @@ public class WorkflowEngine implements MessageReceiver{
 		}
 		
 		if(this.getActivity(this.currentStepId).isEndActivity) {
-			System.out.println("End");
-			this.scheduler.isStopped = true;
+			//this.scheduler.isStopped = true;
 		} else {
 			this.currentStepId = this.transitions.get(this.currentStepId);
-			if(this.getActivity(this.currentStepId).getName() != null) {
-				MessageHandler.getInstance().sendMessage(this.getActivity(this.currentStepId).getName());
-				System.out.println(this.getActivity(this.currentStepId).getName());
+			if (this.getActivity(this.currentStepId).isEndActivity) {
+				MessageHandler.getInstance().sendMessage("End");
+			} else {
+				if(this.getActivity(this.currentStepId).getName() != null) {
+					MessageHandler.getInstance().sendMessage(this.formatMessage());
+					System.out.println(this.getActivity(this.currentStepId).getName());
+				}
 			}
-			
 		}
-		
 	}
 	
 
@@ -90,14 +91,19 @@ public class WorkflowEngine implements MessageReceiver{
 		}
 		
 		if(this.getActivity(this.currentStepId).isStartActivity) {
-			MessageHandler.getInstance().sendMessage("Start");
+			
 		} else {
-			//this.currentStepId = this.transitions.get(this.currentStepId);
+			
 			this.currentStepId = getKeyByValue(this.transitions, this.currentStepId);
-			if(this.getActivity(this.currentStepId).getName() != null) {
-				MessageHandler.getInstance().sendMessage(this.formatMessage());
-				System.out.println(this.getActivity(this.currentStepId).getName());
+			if(this.getActivity(this.currentStepId).isStartActivity) {
+				MessageHandler.getInstance().sendMessage("Start");
+			}else {
+				if(this.getActivity(this.currentStepId).getName() != null) {
+					MessageHandler.getInstance().sendMessage(this.formatMessage());
+					System.out.println(this.getActivity(this.currentStepId).getName());
+				}
 			}
+			
 			
 		}
 		
@@ -119,9 +125,9 @@ public class WorkflowEngine implements MessageReceiver{
 
 	private String formatMessage() {
 		String msg = "";
-		if (this.getActivity(this.currentStepId).getName() != null) msg += this.getActivity(this.currentStepId).getName() + "/r/n" ;
-		if (this.getActivity(this.currentStepId).getImagePath() != null) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + " \"</img>" + "/r/n";
-		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription() + "/r/n";
+		if (this.getActivity(this.currentStepId).getName() != null) msg += this.getActivity(this.currentStepId).getName()  + "<br />";
+		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=" + this.getActivity(this.currentStepId).getImagePath() + "</img>" + "<br />";
+		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
 		
 		return msg;
 	}

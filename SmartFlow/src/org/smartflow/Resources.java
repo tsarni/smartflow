@@ -48,22 +48,32 @@ public abstract class Resources {
 		    	  //"}"+
 		    "}" +
 		    "</script>" +
-		    "<head>" +
+		    "</head>" +
 			"<body>" +
 		    "<div align=\"center\">";
 		    
 	
 	public static final String HTML_END =
+			
+			"</div></body>" +
+			"</html>";
+	
+	public static final String HTML_WORKFLOW_BUTTONS =
 			"<table><tr>" +
 			"<td><FORM ACTION=\"PREVIOUS\" METHOD=POST>" +
 			"<input type=\"submit\" value=\"Previous\"></FORM></td>" +
 			"<td><FORM ACTION=\"NEXT\" METHOD=POST>" +
 			"<input type=\"submit\" value=\"Next\"></FORM></td>" +
-			"</tr></table>" +
-			"</div></body>" +
-			"</html>";
+			"</tr></table>";
 	
-	public static final String RESPONSE_WELCOME_MESSAGE = "<b> This is the HTTP Server Home Page.... </b><BR>";
+	public static final String HTML_START_SCREEN =
+		
+			"<FORM enctype=\"multipart/form-data\" ACTION=\"LOAD\" METHOD=\"POST\">" +
+			"<input type=\"file\" name=\"Browse\">" +
+			"<input type=\"submit\" value=\"UPLOAD\">" +
+			"</FORM>";
+	
+	public static final String RESPONSE_WELCOME_MESSAGE = "<b>Workflow engine server test </b><BR>";
 	
 	public static final String RESPONSE_CLIENT_REQUEST_MESSAGE = "The HTTP Client request is ....<BR>";
 	

@@ -88,6 +88,7 @@ public void run() {
 			StringBuffer serverResponse = new StringBuffer();
 			serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
 			serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
+			serverResponse.append(Resources.HTML_START_SCREEN);
 			System.out.println(clientRequest);
 
 			//System.out.println("The HTTP request string is ....");
@@ -131,6 +132,9 @@ public void run() {
 					MessageHandler.getInstance().messageReceived("Previous");
 				}
 				if(action.equals("NEXT")) {
+					MessageHandler.getInstance().messageReceived("Next");
+				}
+				if(action.equals("UPLOAD")) {
 					MessageHandler.getInstance().messageReceived("Next");
 				}
 				

@@ -43,7 +43,8 @@ public class SmartFlowParser {
 							
 							Activity activity = new Activity();
 							activity.setId(ACTIVITY.attributeValue("Id"));
-							activity.setName(ACTIVITY.attributeValue("Name"));
+							if (ACTIVITY.attributeValue("Name") != null) activity.setName(ACTIVITY.attributeValue("Name"));
+							if (ACTIVITY.element("Description") != null) activity.setDescription(ACTIVITY.elementText("Description"));
 							
 							if(ACTIVITY.element("Event") != null) {
 								
@@ -55,6 +56,17 @@ public class SmartFlowParser {
 								if(ACTIVITY.element("Event").element("EndEvent") != null) {
 									activity.isEndActivity = true;
 								}
+							}
+							
+							if(ACTIVITY.element("ExtendedAttributes") != null) {
+								
+								for (int e = 0; e < ACTIVITY.element("ExtendedAttributes").elements().size(); e++) {
+									Element el = (Element) ACTIVITY.element("ExtendedAttributes").elements().get(e);
+									if (el.attributeValue("Name").equals("object_image")) {
+										activity.setImagePath(el.attributeValue("Value"));
+									}
+								}
+
 							}
 							
 							WorkflowEngine.getInstance().storeActivity(activity);
