@@ -12,8 +12,9 @@ public abstract class Resources {
 		    "function make_call()"+
 		    "{"+
 		     	
-  
-  			"document.write.textout = httpGet(\"get.html\");"+
+//			"alert(\"got some stuff back:\");" +
+//  			"document.write.textout = httpGet(\"NEXT\");"+
+			"httpGet(\"NEXT\");"+
 
 		      "setTimeout(function(){"+ 
 		        "make_call();" +
@@ -32,7 +33,7 @@ public abstract class Resources {
 //					"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
 //				"};" +
 		    
-		    	"xmlHttp.open( \"GET\", theUrl, true );"+
+		    	"xmlHttp.open( \"POST\", theUrl, true );"+
 		    	// "xmlHttp.onreadystatechange = useHttpResponse();" +
 		    	"xmlHttp.send( null );" +
 		    	//"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
@@ -68,10 +69,17 @@ public abstract class Resources {
 	
 	public static final String HTML_START_SCREEN =
 		
-			"<FORM enctype=\"multipart/form-data\" ACTION=\"LOAD\" METHOD=\"POST\">" +
-			"<input type=\"file\" name=\"Browse\">" +
-			"<input type=\"submit\" value=\"UPLOAD\">" +
+//			"<FORM enctype=\"multipart/form-data\" ACTION=\"LOAD\" METHOD=\"POST\">" +
+//			"<input type=\"file\" name=\"Browse\">" +
+//			"<input type=\"submit\" value=\"UPLOAD\">" +
+//			"</FORM>";
+			"<button onclick=\"make_call()\">Copy Text</button>" + 
+			"<FORM ACTION=\"START\" METHOD=\"POST\">" +
+//			"<input type=\"submit\" value=\"Start\" onClick=\"make_call()\">" +
+			"<input type=\"button\" value=\"Start\" onClick=\"make_call();\">" +
 			"</FORM>";
+			
+			
 	
 	public static final String RESPONSE_WELCOME_MESSAGE = "<b>Workflow engine server test </b><BR>";
 	

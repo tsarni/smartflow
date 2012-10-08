@@ -142,6 +142,8 @@ public class WorkflowEngine implements MessageReceiver{
 		if (_msg.equals("Previous")) {
 			this.goToPreviousStep();
 		}
+		
+		
 		//MessageHandler.getInstance().sendMessage(_msg);
 	}
 	

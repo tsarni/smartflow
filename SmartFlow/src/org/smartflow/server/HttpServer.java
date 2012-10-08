@@ -134,7 +134,8 @@ public void run() {
 				if(action.equals("NEXT")) {
 					MessageHandler.getInstance().messageReceived("Next");
 				}
-				if(action.equals("UPLOAD")) {
+				if(action.equals("START")) {
+					sendResponse(200, Resources.HTML_WORKFLOW_BUTTONS, false);
 					MessageHandler.getInstance().messageReceived("Next");
 				}
 				
