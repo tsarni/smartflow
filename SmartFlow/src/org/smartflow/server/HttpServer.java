@@ -88,7 +88,6 @@ public void run() {
 			StringBuffer serverResponse = new StringBuffer();
 			serverResponse.append(Resources.RESPONSE_WELCOME_MESSAGE);
 			serverResponse.append(Resources.RESPONSE_CLIENT_REQUEST_MESSAGE);
-			serverResponse.append(Resources.HTML_START_SCREEN);
 			System.out.println(clientRequest);
 
 			//System.out.println("The HTTP request string is ....");
@@ -135,7 +134,6 @@ public void run() {
 					MessageHandler.getInstance().messageReceived("Next");
 				}
 				if(action.equals("START")) {
-					sendResponse(200, Resources.HTML_WORKFLOW_BUTTONS, false);
 					MessageHandler.getInstance().messageReceived("Next");
 				}
 				
@@ -174,7 +172,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 		if (!fileName.endsWith(".htm") && !fileName.endsWith(".html"))
 			contentTypeLine = "Content-Type: \r\n";
 	} else {
-		responseString = Resources.HTML_START + responseString + Resources.HTML_END;
+		responseString = Resources.HTML_START + responseString + Resources.HTML_WORKFLOW_BUTTONS + Resources.HTML_END;
 		contentLengthLine = "Content-Length: " + responseString.length() + "\r\n";
 	}
 

@@ -18,7 +18,7 @@ public abstract class Resources {
 
 		      "setTimeout(function(){"+ 
 		        "make_call();" +
-		      "}, 5000);" +
+		      "}, 15000);" +
 		    "}" +
 
 //		    "$(document).ready(function() {" +
