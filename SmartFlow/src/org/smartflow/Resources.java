@@ -16,22 +16,22 @@ public abstract class Resources {
 //  			"document.write.textout = httpGet(\"NEXT\");"+
 			"httpGet(\"NEXT\");"+
 
-		      "setTimeout(function(){"+ 
-		        "make_call();" +
-		      "}, 15000);" +
+//		      "setTimeout(function(){"+ 
+//		        "make_call();" +
+//		      "}, 15000);" +
 		    "}" +
 
-//		    "$(document).ready(function() {" +
-//		      "make_call();" +
-//		    "});"+
+		    "$(document).ready(function() {" +
+		      "make_call();" +
+		    "});"+
 		    
 		    "function httpGet(theUrl) {"+
 		    	"var xmlHttp = null;"+
 		    	"xmlHttp = new XMLHttpRequest();" +
 		    	
-//				"xmlhttp.onreadystatechange = function () {"+
-//					"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
-//				"};" +
+				"xmlhttp.onreadystatechange = function () {"+
+					"alert(\"got some stuff back:\"+xmlHttp.responseText);" +
+				"};" +
 		    
 		    	"xmlHttp.open( \"POST\", theUrl, true );"+
 		    	// "xmlHttp.onreadystatechange = useHttpResponse();" +
