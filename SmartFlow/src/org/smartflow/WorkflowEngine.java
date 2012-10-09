@@ -14,6 +14,8 @@ public class WorkflowEngine implements MessageReceiver{
 	
 	private String startId;
 	private String currentStepId;
+	private String processStep;
+	private int stepNumber;
 	private Scheduler scheduler;
 	
 	private boolean isStarted = false;
@@ -39,6 +41,7 @@ public class WorkflowEngine implements MessageReceiver{
 	public void startProcess() {
 		this.currentStepId = this.startId;
 		System.out.println("Start");
+		this.stepNumber = 0;
 		//Timer timer = new Timer();
 		//timer.scheduleAtFixedRate(new ScheduledTask(Settings.ACTIVITY_DURATION), 0, Settings.ACTIVITY_DURATION);
 		
@@ -71,6 +74,9 @@ public class WorkflowEngine implements MessageReceiver{
 			//this.scheduler.isStopped = true;
 		} else {
 			this.currentStepId = this.transitions.get(this.currentStepId);
+			this.stepNumber++;
+			
+			
 			if (this.getActivity(this.currentStepId).isEndActivity) {
 				MessageHandler.getInstance().sendMessage("End");
 			} else {
@@ -95,6 +101,7 @@ public class WorkflowEngine implements MessageReceiver{
 		} else {
 			
 			this.currentStepId = getKeyByValue(this.transitions, this.currentStepId);
+			this.stepNumber--;
 			if(this.getActivity(this.currentStepId).isStartActivity) {
 				MessageHandler.getInstance().sendMessage("Start");
 			}else {
@@ -125,7 +132,8 @@ public class WorkflowEngine implements MessageReceiver{
 
 	private String formatMessage() {
 		String msg = "";
-		if (this.getActivity(this.currentStepId).getName() != null) msg += this.getActivity(this.currentStepId).getName()  + "<br />";
+		this.processStep = "(" + this.stepNumber + "/" + this.activities.size() + ") ";
+		if (this.getActivity(this.currentStepId).getName() != null) msg += this.processStep + this.getActivity(this.currentStepId).getName()  + "<br />";
 		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=" + this.getActivity(this.currentStepId).getImagePath() + "</img>" + "<br />";
 		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
 		
