@@ -27,8 +27,9 @@ private Socket clientSocket;
 private ServerSocket serverSocket;
 private BufferedReader socketReader;
 private DataOutputStream outputStream;
-
-private Thread serverThread;;
+private String buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_START_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
+private Thread serverThread;
+private String previousMessage;
 
 
 public HttpServer() {
@@ -129,13 +130,16 @@ public void run() {
 				 
 				if(action.equals("PREVIOUS")) {
 					MessageHandler.getInstance().messageReceived("Previous");
-				}
-				if(action.equals("NEXT")) {
+				}if(action.equals("NEXT")) {
 					MessageHandler.getInstance().messageReceived("Next");
-				}
-				if(action.equals("START")) {
+				}if(action.equals("START")) {
+					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_STOP_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
 					MessageHandler.getInstance().messageReceived("Next");
+				}if(action.equals("STOP")) {
+					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_START_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
+					this.sendMessage(this.previousMessage);
 				}
+				
 				
 			} else {
 				System.out.println(httpMethod.toString());
@@ -172,7 +176,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 		if (!fileName.endsWith(".htm") && !fileName.endsWith(".html"))
 			contentTypeLine = "Content-Type: \r\n";
 	} else {
-		responseString = Resources.HTML_START + responseString  + Resources.HTML_WORKFLOW_BUTTONS + Resources.HTML_END;
+		responseString = Resources.HTML_START + responseString  + this.buttonLayout + Resources.HTML_END;
 		contentLengthLine = "Content-Length: " + responseString.length() + "\r\n";
 	}
 
@@ -206,6 +210,7 @@ public void sendFile (FileInputStream fin, DataOutputStream out) throws Exceptio
 @Override
 public void sendMessage(String msg) {
 	try {
+		this.previousMessage = msg;
 		sendResponse(200, msg, false);
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
