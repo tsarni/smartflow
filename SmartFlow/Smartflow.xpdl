@@ -77,7 +77,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_pot.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="1.png"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="untensil_coffee_pot.jpg"/>
@@ -98,7 +98,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;remove_the_pot_lid.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="2.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="Camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot_lid"/>
@@ -120,7 +120,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="quantity" Value="1"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_coffee_pot_on_table.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="3.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot"/>
@@ -143,6 +143,7 @@
                         <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="faucet"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="4.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -159,7 +160,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;toggle_faucet.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="5.png"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="faucet"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="untensil_faucet"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
@@ -182,7 +183,7 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="toggle_faucet.jpg"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="6.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
                     </xpdl:ExtendedAttributes>
@@ -201,7 +202,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;toggle_faucet.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="7.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="16"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
@@ -222,10 +223,11 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;toggle_faucet.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="8.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="faucet"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="2"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -233,26 +235,7 @@
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act9" Name="Take the coffee filter container">
-                    <xpdl:Description>Ota suodatinkotelo kahvinkeittimestä</xpdl:Description>
-                    <xpdl:Implementation>
-                        <xpdl:No/>
-                    </xpdl:Implementation>
-                    <xpdl:Performers>
-                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
-                    </xpdl:Performers>
-                    <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_name" Value="COFFEE_FILTER_CONTAINER"/>
-                        <xpdl:ExtendedAttribute Name="object_location" Value="ORIGIN"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_filter_container.jpg&quot;"/>
-                    </xpdl:ExtendedAttributes>
-                    <xpdl:NodeGraphicsInfos>
-                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1399" YCoordinate="52"/>
-                        </xpdl:NodeGraphicsInfo>
-                    </xpdl:NodeGraphicsInfos>
-                </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act10" Name="Return to coffee maker and put coffee pot on the table">
+                <xpdl:Activity Id="Coffee_Making_act9" Name="Return to coffee maker and put coffee pot on the table">
                     <xpdl:Description>Palaa kahvinkeittimen luo and ja aseta kahvipannu pöydälle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
@@ -261,19 +244,19 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;return_coffee_pot_on_table.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="9.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="7"/>
-                        <xpdl:ExtendedAttribute Name="utensil" Value="coffee pot"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="utensil" Value="coffee_pot"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1522" YCoordinate="52"/>
+                            <xpdl:Coordinates XCoordinate="1399" YCoordinate="52"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act11" Name="Remove water compartment lid">
+                <xpdl:Activity Id="Coffee_Making_act10" Name="Remove water compartment lid">
                     <xpdl:Description>Avaa tai poista kahvinkeittimen vesikotelon kansi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
@@ -282,8 +265,29 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;pour_water_to_compartment.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="10.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
+                        <xpdl:ExtendedAttribute Name="utensil" Value="water_compartment_lid"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_water_compartment_lid.jpg"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="1522" YCoordinate="52"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act11" Name="put water compartment lid on table">
+                    <xpdl:Description>Aseta vesikotelon kansi pöydälle</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="11.png"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil" Value="water_compartment_lid"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_water_compartment_lid.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
@@ -303,7 +307,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_back_the_filter_lid.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="22.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -320,7 +324,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_back_the_coffee_container_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="21.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -337,7 +341,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_back_the_coffee_container.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="20.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -354,7 +358,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;add_1_spoon_coffee_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="19.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -371,7 +375,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;add_1_spoon_coffee.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="18.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -388,8 +392,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_name" Value="COFFEE_SPOON"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_coffee_spoon.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="17.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -406,9 +409,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_name" Value="GROUND_COFFEE"/>
-                        <xpdl:ExtendedAttribute Name="object_location" Value="ORIGIN"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_ground_coffee.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="16.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -425,10 +426,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_name" Value="COFFEE_FILTER_PACK"/>
-                        <xpdl:ExtendedAttribute Name="object_location" Value="CURRENT"/>
-                        <xpdl:ExtendedAttribute Name="object_access_type" Value="RETURN"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_back_the_coffee_filter.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="15.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -445,9 +443,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_name" Value="FILTER_CONTAINER"/>
-                        <xpdl:ExtendedAttribute Name="object_location" Value="ORIGIN"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_filter_into_filter_container.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="14.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -464,7 +460,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_filter_3.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="13.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -472,8 +468,8 @@
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act12" Name="Take a coffee filter">
-                    <xpdl:Description>Ota paketista yksi suodatinpussi</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act12" Name="Pour water from pot to water compartment">
+                    <xpdl:Description>Kaada vesi pannusta vesikoteloon</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -481,8 +477,11 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="quantity" Value="1"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_filter_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="12.png"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="15"/>
+                        <xpdl:ExtendedAttribute Name="untensil" Value="coffee_pot"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -499,7 +498,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_tea_spoon.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="33.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -516,7 +515,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;add_sugar.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="32.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -533,7 +532,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;turn_off_coffee_maker_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="31.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -550,7 +549,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_sugar.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="30.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -567,7 +566,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;turn_off_coffee_maker.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="29.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -584,7 +583,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;pour_the_coffee.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="28.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -601,7 +600,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_pot_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="27.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -618,7 +617,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_cup_and_saucer_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="26.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -635,7 +634,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_cup_and_saucer.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="25.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -652,7 +651,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;turn_on_coffee_maker.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="24.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -669,7 +668,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_filter_container_in_coffee_maker.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="23.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -677,8 +676,8 @@
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act113" Name="Wash filter container">
-                    <xpdl:Description>Pese suodatinsäiliö</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act113" Name="Take coffee pot">
+                    <xpdl:Description>Ota kahvipannu kätessi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -686,16 +685,19 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;wash_filter_container.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="45.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot_with_coffee.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="4"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5567" YCoordinate="44"/>
+                            <xpdl:Coordinates XCoordinate="5680" YCoordinate="44"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act103" Name="Put the coffee filter into trash">
-                    <xpdl:Description>Laita käyetty suodatin roskakoriin</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act103" Name="Turn off coffee maker">
+                    <xpdl:Description>Katkaise virta kahvinkeittimestä</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -703,16 +705,19 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_coffee_filter_into_trash.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="44.png"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="6"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_maker_power_switch.jpg"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5449" YCoordinate="44"/>
+                            <xpdl:Coordinates XCoordinate="5562" YCoordinate="44"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act93" Name="Remove the filter container">
-                    <xpdl:Description>Ota suodatinsäiliö irti kahvinkeittimestä</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act93" Name="Put tea spoon on saucer">
+                    <xpdl:Description>Aseta teelusikka lautaselle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -720,11 +725,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;remove_filter_container.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="43.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_tea_spoon.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5326" YCoordinate="44"/>
+                            <xpdl:Coordinates XCoordinate="5439" YCoordinate="44"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -737,7 +745,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_coffee_pot_in_coffee_maker.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="41.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -754,7 +762,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;wash_the_coffee_pot_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="40.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -771,7 +779,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;wash_the_coffee_pot.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="39.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -788,7 +796,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;flush_out_remaining_coffee_2.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="38.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -805,7 +813,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;flush_out_remaining_coffee.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="37.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -822,7 +830,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;take_the_coffee_pot_3.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="36.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -839,7 +847,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_back_the_sugar_pot.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="35.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -856,7 +864,7 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;mix_the_sugar.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="34.png"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -864,8 +872,8 @@
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act16" Name="Put filter container in coffee maker">
-                    <xpdl:Description>Aseta suodatinkotelo takaisin kahvinkeittimeen</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act16" Name="Pour coffee to cup">
+                    <xpdl:Description>Kaada kahvia kahvikuppiin</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -873,11 +881,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="&quot;put_filter_container_in_coffee_maker.jpg&quot;"/>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="46.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_cup_with_coffee.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="8"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5684" YCoordinate="44"/>
+                            <xpdl:Coordinates XCoordinate="5797" YCoordinate="44"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -898,7 +909,204 @@
                     </xpdl:Event>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="31">
-                            <xpdl:Coordinates XCoordinate="5821" YCoordinate="64"/>
+                            <xpdl:Coordinates XCoordinate="6933" YCoordinate="60"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act162" Name="Put coffee pot back to coffee maker">
+                    <xpdl:Description>Aseta kahvipannu takaisin kahvinkeittimeen</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="47.png"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="6"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="5913" YCoordinate="47"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act163" Name="Take sugar container from cabinet">
+                    <xpdl:Description>Ota sokerikko kaapista</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="48.png"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="3"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="9"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6028" YCoordinate="48"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act164" Name="Put sugar container on table">
+                    <xpdl:Description>Aseta sokerikko pöydälle</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="49.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="7"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6145" YCoordinate="49"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act165" Name="Take a sugar from container">
+                    <xpdl:Description>Ota yksi sokeripala sokerikosta</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="50.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6262" YCoordinate="49"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act166" Name="Add sugar to coffee">
+                    <xpdl:Description>Lisää sokeria kahviin</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="51.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6375" YCoordinate="48"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act167" Name="Take sugar from table">
+                    <xpdl:Description>Ota sokerikko pöydältä käteesi</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="52.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6487" YCoordinate="48"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act168" Name="Put sugar container back to closet">
+                    <xpdl:Description>Laita sokerikko takaisin kaappiin</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="53.png"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="6"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_sugar.jpg"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="3"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6594" YCoordinate="50"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act1681" Name="Use tea spoon to mix coffee">
+                    <xpdl:Description>Sekoita kahvi teelusikalla</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="54.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil" Value="utensil_tea_spoon.jpg"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="10"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6702" YCoordinate="51"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act1682" Name="Coffee is ready">
+                    <xpdl:Description>Kahvi on valmista</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="55.png"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="6814" YCoordinate="53"/>
+                        </xpdl:NodeGraphicsInfo>
+                    </xpdl:NodeGraphicsInfos>
+                </xpdl:Activity>
+                <xpdl:Activity Id="Coffee_Making_act931" Name="Take tea spoon">
+                    <xpdl:Description>Ota  teelusikka astialaatikosta</xpdl:Description>
+                    <xpdl:Implementation>
+                        <xpdl:No/>
+                    </xpdl:Implementation>
+                    <xpdl:Performers>
+                        <xpdl:Performer>Senior_Citizen</xpdl:Performer>
+                    </xpdl:Performers>
+                    <xpdl:ExtendedAttributes>
+                        <xpdl:ExtendedAttribute Name="object_image" Value="42.png"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_tea_spoon.jpg"/>
+                        <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="5"/>
+                    </xpdl:ExtendedAttributes>
+                    <xpdl:NodeGraphicsInfos>
+                        <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
+                            <xpdl:Coordinates XCoordinate="5324" YCoordinate="46"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -1099,7 +1307,7 @@
                         <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
                     </xpdl:ConnectorGraphicsInfos>
                 </xpdl:Transition>
-                <xpdl:Transition From="Coffee_Making_act83" Id="Coffee_Making_tra40" To="Coffee_Making_act93">
+                <xpdl:Transition From="Coffee_Making_act83" Id="Coffee_Making_tra40" To="Coffee_Making_act931">
                     <xpdl:ConnectorGraphicsInfos>
                         <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
                     </xpdl:ConnectorGraphicsInfos>
@@ -1119,17 +1327,67 @@
                         <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
                     </xpdl:ConnectorGraphicsInfos>
                 </xpdl:Transition>
-                <xpdl:Transition From="Coffee_Making_act16" Id="Coffee_Making_tra44" To="Coffee_Making_act18">
-                    <xpdl:ConnectorGraphicsInfos>
-                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
-                    </xpdl:ConnectorGraphicsInfos>
-                </xpdl:Transition>
                 <xpdl:Transition From="Coffee_Making_act81" Id="Coffee_Making_tra47" To="Coffee_Making_act91">
                     <xpdl:ConnectorGraphicsInfos>
                         <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
                     </xpdl:ConnectorGraphicsInfos>
                 </xpdl:Transition>
                 <xpdl:Transition From="Coffee_Making_act17" Id="Coffee_Making_tra45" To="Coffee_Making_act1">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act162" Id="Coffee_Making_tra48" To="Coffee_Making_act163">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act163" Id="Coffee_Making_tra49" To="Coffee_Making_act164">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act164" Id="Coffee_Making_tra50" To="Coffee_Making_act165">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act165" Id="Coffee_Making_tra51" To="Coffee_Making_act166">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act166" Id="Coffee_Making_tra52" To="Coffee_Making_act167">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act167" Id="Coffee_Making_tra53" To="Coffee_Making_act168">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act168" Id="Coffee_Making_tra54" To="Coffee_Making_act1681">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act1681" Id="Coffee_Making_tra55" To="Coffee_Making_act1682">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act1682" Id="Coffee_Making_tra56" To="Coffee_Making_act18">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act16" Id="Coffee_Making_tra44" To="Coffee_Making_act162">
+                    <xpdl:ConnectorGraphicsInfos>
+                        <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
+                    </xpdl:ConnectorGraphicsInfos>
+                </xpdl:Transition>
+                <xpdl:Transition From="Coffee_Making_act931" Id="Coffee_Making_tra46" To="Coffee_Making_act93">
                     <xpdl:ConnectorGraphicsInfos>
                         <xpdl:ConnectorGraphicsInfo FillColor="0,0,0" IsVisible="true" Style="NO_ROUTING_SPLINE" ToolId="JaWE"/>
                     </xpdl:ConnectorGraphicsInfos>
