@@ -37,4 +37,7 @@ public abstract class Resources {
 	
 	public static final String ERROR_404_MESSAGE = "<b>ERROR 404: The requested resource not found</b>";
 	
+	public static final String[] CAMERAS = {"C1: Keittiön pöytä","C2: Pesuallas","C3: Kaappi 1 (Ensimmäinen vasemmalta)","C4: Kaappi 2 (Toinen vasemmalta)","C5: Vetolaatikot"};
+	
+	
 }

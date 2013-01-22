@@ -132,10 +132,11 @@ public class WorkflowEngine implements MessageReceiver{
 
 	private String formatMessage() {
 		String msg = "";
-		this.processStep = "(" + this.stepNumber + "/" + this.activities.size() + ") ";
+		this.processStep = "(" + this.stepNumber + "/" + (this.activities.size() - 2)  + ") "; //reduce two from size() since start and end activities are counted in size
 		if (this.getActivity(this.currentStepId).getName() != null) msg += this.processStep + this.getActivity(this.currentStepId).getName()  + "<br />";
 		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + "\"</img>" + "<br />";
 		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
+		if (this.getActivity(this.currentStepId).getAttachedUtensil() != null && this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath() + "\"</img>" + "<br />";
 		
 		return msg;
 	}
