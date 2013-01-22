@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StationaryObjects>
+	<StationaryObject Id="stationary@0231" Name="Dry goods cabinet">
+		<ObjectDimensions width="35" height="100" depth="20" x=220 y=140 z=10 />
+		<ReferencedObjects>
+			<StationaryObject id="referenced@3300" Name="Door Handle">
+				<ObjectDimensions width="null" height="null" depth="null" x=20 y=5 z=0 />
+			</StationaryObject>
+		</ReferencedObjects>
+		<ContainedObjects>
+	    	<StationaryObject id="stationary@0234" Name="Bottom shelf">
+				<ObjectDimensions width="35" height="35" depth="20" x=0 y=35 z=0 />
+				<ContainedObjects>
+					<Consumable id="consumable@20123" Name="Ground Coffee">
+						<ObjectDimensions width="7" height="10" depth="4" x="null" y="null" z="null" />
+					</Consumable>
+					<Consumable id="consumable@20133" Name="Sugar">
+				</ContainedObjects>	
+    		</StationaryObject>
+    		<StationaryObject id="stationary@0235" Name="Middle shelf"/>
+			<StationaryObject id="stationary@0236" Name="Top shelf"/>
+		</ContainedObjects >
+    </StationaryObject>
+    
+    <StationaryObject Id="stationary@0231" Name="Table Drawers">
+		<ObjectDimensions width="35" height="100" depth="20" x=220 y=20 z=10 />
+		<ContainedObjects>
+	    	<StationaryObject id="stationary@0234" Name="Cutlery Drawer">
+				<ObjectDimensions width="35" height="14" depth="40" x=0 y=70 z=0 />
+				<ContainedObjects>
+					<Utensil id="utensil@20123" Name="Fork" Amount="5"/>
+					<Utensil id="utensil@20123" Name="Knife" Amount="5"/>
+				</ContainedObjects>	
+    		</StationaryObject>
+		</ContainedObjects >
+    </StationaryObject>
+</StationaryObjects>
+
