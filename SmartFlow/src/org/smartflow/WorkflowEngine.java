@@ -134,7 +134,7 @@ public class WorkflowEngine implements MessageReceiver{
 		String msg = "";
 		this.processStep = "(" + this.stepNumber + "/" + this.activities.size() + ") ";
 		if (this.getActivity(this.currentStepId).getName() != null) msg += this.processStep + this.getActivity(this.currentStepId).getName()  + "<br />";
-		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=" + this.getActivity(this.currentStepId).getImagePath() + "</img>" + "<br />";
+		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + "\"</img>" + "<br />";
 		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
 		
 		return msg;

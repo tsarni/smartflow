@@ -65,6 +65,15 @@ public class SmartFlowParser {
 									if (el.attributeValue("Name").equals("object_image")) {
 										activity.setImagePath(el.attributeValue("Value"));
 									}
+									if (el.attributeValue("Name").equals("untensil_image")) {
+										//todo
+									}
+									if (el.attributeValue("Name").equals("duration")) {
+										//todo
+									}
+									if (el.attributeValue("Name").equals("camera")) {
+										//todo
+									}
 								}
 
 							}
