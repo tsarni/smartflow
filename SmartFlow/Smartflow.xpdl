@@ -157,7 +157,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="5.png"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="14"/>
                     </xpdl:ExtendedAttributes>
@@ -297,7 +297,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="21.png"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_filter_container_lid.jpg"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_filter_container_lid.jpg"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
@@ -337,7 +337,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="19.png"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_filter_container.jpg"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_filter_container.jpg"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="6"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
@@ -518,7 +518,7 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="32.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_filter_container_lid.jpg"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_filter_container_lid.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
@@ -537,7 +537,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="31.png"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_cofee_powder.jpg"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_powder.jpg"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="5"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="3"/>
                     </xpdl:ExtendedAttributes>
@@ -697,7 +697,7 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="22.png"/>
-                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_filter_container_lid.jpg"/>
+                        <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_filter_container_lid.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                     </xpdl:ExtendedAttributes>

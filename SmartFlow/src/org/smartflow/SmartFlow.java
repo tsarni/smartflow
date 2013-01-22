@@ -11,14 +11,11 @@ public class SmartFlow  {
 
 	public static void main(String[] args) throws Exception, IOException {
 		
-		System.out.println ("TCPServer Waiting for client on port 5000");
-
-		
-		//startHttpServer();
-	
+		System.out.println ("TCPServer Waiting for client on port " + Settings.SERVER_PORT);
 		SmartFlowParser sfParser = new SmartFlowParser();
 		sfParser.parseXpdlFile("Smartflow.xpdl");
-		//WorkflowEngine.getInstance().startProcess();
+		
+		@SuppressWarnings("unused")
 		HttpServer httpServer = new HttpServer();
 		
 		

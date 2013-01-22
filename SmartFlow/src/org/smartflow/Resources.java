@@ -2,12 +2,16 @@ package org.smartflow;
 
 public abstract class Resources {
 	
-	public static final String HTML_START =
+	public static final String HTML_HEADER_OPEN =
 			"<html>" +
 			"<head>"+
 			"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>"	+	
 			"<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js\" type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
-			"<title>Smart Kitchen Workflow Engine</title>" +
+			"<title>Smart Kitchen Workflow Engine</title>"; 
+			
+	
+	public static final String HTML_HEADER_CLOSE =
+			
 			"<script src=\"client.js\"  type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
 		    "</head>" +
 			"<body>" +

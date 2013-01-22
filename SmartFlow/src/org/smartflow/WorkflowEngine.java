@@ -137,7 +137,9 @@ public class WorkflowEngine implements MessageReceiver{
 		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + "\"</img>" + "<br />";
 		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
 		if (this.getActivity(this.currentStepId).getAttachedUtensil() != null && this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath() + "\"</img>" + "<br />";
-		
+		//if (this.getActivity(this.currentStepId).getDuration() > 0) msg +=  "<script type=\"text/javascript\" charset=\"iso-8859-1\">  var delayInSeconds = " + this.getActivity(this.currentStepId).getDuration() + ";</script>";
+
+		   
 		return msg;
 	}
 	

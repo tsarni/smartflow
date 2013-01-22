@@ -7,7 +7,7 @@ public class Activity {
 	private String description = "";
 	private String imagePath = "";
 	private Utensil attachedUtensil;
-	private int duration;
+	private int duration = 0;
 	private int camera;
 	public boolean isStartActivity = false;
 	public boolean isEndActivity = false;
