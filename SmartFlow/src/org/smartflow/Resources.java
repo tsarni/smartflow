@@ -8,7 +8,7 @@ public abstract class Resources {
 			"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>"	+	
 			"<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js\" type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
 			"<title>Smart Kitchen Workflow Engine</title>" +
-			"<script src=\"client.js\"  type=\"text/javascript\" charset=\"ISO-8859-1\"></script>" +
+			"<script src=\"client.js\"  type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
 		    "</head>" +
 			"<body>" +
 		    "<div align=\"center\" id=\"holder\">";
