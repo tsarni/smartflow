@@ -176,7 +176,7 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 		if (!fileName.endsWith(".htm") && !fileName.endsWith(".html"))
 			contentTypeLine = "Content-Type: \r\n";
 	} else {
-		responseString = Resources.HTML_HEADER_OPEN  +  Resources.HTML_HEADER_CLOSE + responseString  + this.buttonLayout + Resources.HTML_END;
+		responseString = Resources.HTML_START + responseString  + this.buttonLayout + Resources.HTML_END;
 		contentLengthLine = "Content-Length: " + responseString.length() + "\r\n";
 	}
 
