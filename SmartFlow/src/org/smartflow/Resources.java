@@ -11,7 +11,7 @@ public abstract class Resources {
 			
 	
 	public static final String HTML_HEADER_CLOSE =
-			
+			"<script src=\"global.js\"  type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
 			"<script src=\"client.js\"  type=\"text/javascript\" charset=\"iso-8859-1\"></script>" +
 		    "</head>" +
 			"<body>" +

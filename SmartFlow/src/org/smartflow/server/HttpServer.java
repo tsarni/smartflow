@@ -187,8 +187,12 @@ public void sendResponse (int statusCode, String responseString, boolean isFile)
 	outputStream.writeBytes("Connection: close\r\n");
 	outputStream.writeBytes("\r\n");
 
-	if (isFile) sendFile(fin, outputStream);
-	else outputStream.writeBytes(responseString);
+	if (isFile) {
+		sendFile(fin, outputStream);
+	}
+	else {
+		outputStream.writeBytes(responseString);
+	}
 	
 	//outputStream.close();
 }

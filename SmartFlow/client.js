@@ -1,11 +1,13 @@
 
 	var counter;
-    var delayInSeconds = 10;
-
+    var delayInSeconds;
+   
+    
+    
 
     function pollServer(msg){
     	if(msg === "START") {
-    		
+    		readVariable();
     	}else {
     		resetTimer();
     	}
@@ -33,7 +35,7 @@
     };
 
     $(document).ready(function(){
-
+    	
     	//counter=setInterval(UpdateTimer, 1000); 
     });
     
@@ -65,6 +67,27 @@
 
     function resetTimer() {
     	clearInterval(counter);
-    	delayInSeconds = 10;
+    	readVariable();
     	document.getElementById("timer").innerHTML = "";
     }
+    
+	function readVariable() {
+
+		var txtFile = new XMLHttpRequest();
+		txtFile.open("GET", "durationValue.txt", true);
+		
+		txtFile.onreadystatechange = function() {
+			if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+				if (txtFile.status === 200) {  // Makes sure it's found the file.
+					value = txtFile.responseText; 
+					//lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+					delayInSeconds = value;
+				}
+			}
+		}
+		
+		txtFile.send(null);
+	}
+
+
+    
