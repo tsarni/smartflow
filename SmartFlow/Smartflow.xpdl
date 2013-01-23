@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xpdl:Package xmlns:xpdl="http://www.wfmc.org/2008/XPDL2.1" xmlns="http://www.wfmc.org/2008/XPDL2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="Smartflow" Name="Smartflow" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/docs/bpmnxpdl_31.xsd">
     <xpdl:PackageHeader>
         <xpdl:XPDLVersion>2.1</xpdl:XPDLVersion>
@@ -69,7 +69,7 @@
             </xpdl:ProcessHeader>
             <xpdl:Activities>
                 <xpdl:Activity Id="Coffee_Making_act1" Name="Take the coffee pot">
-                    <xpdl:Description>Ota kahvipannu käteesi kahvinkeittimestä</xpdl:Description>
+                    <xpdl:Description>Ota kahvipannu kÃ¤teesi kahvinkeittimestÃ¤</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -109,7 +109,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act3" Name="Put coffee pot on the table">
-                    <xpdl:Description>Aseta kahvipannu pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta kahvipannu pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -117,10 +117,10 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="quantity" Value="1"/>
                         <xpdl:ExtendedAttribute Name="object_image" Value="3.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -140,6 +140,7 @@
                         <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
                         <xpdl:ExtendedAttribute Name="object_image" Value="4.png"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="2"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -188,7 +189,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act7" Name="Add one cup of water">
-                    <xpdl:Description>Lisää yksi kuppi vettä</xpdl:Description>
+                    <xpdl:Description>LisÃ¤Ã¤ yksi kuppi vettÃ¤</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -228,7 +229,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act9" Name="Return to coffee maker and put coffee pot on the table">
-                    <xpdl:Description>Palaa kahvinkeittimen luo and ja aseta kahvipannu pöydälle</xpdl:Description>
+                    <xpdl:Description>Palaa kahvinkeittimen luo and ja aseta kahvipannu pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -268,7 +269,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act11" Name="put water compartment lid on table">
-                    <xpdl:Description>Aseta vesikotelon kansi pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta vesikotelon kansi pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -288,7 +289,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act111" Name="Remove coffee filter container lid">
-                    <xpdl:Description>Poista suodatinsäiliön kansi paikoilta</xpdl:Description>
+                    <xpdl:Description>Poista suodatinsÃ¤iliÃ¶n kansi paikoilta</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -308,7 +309,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act101" Name="Put coffee filter container on table">
-                    <xpdl:Description>Aseta suodatinsäiliö pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta suodatinsÃ¤iliÃ¶ pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -328,7 +329,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act91" Name="Take coffee filter container">
-                    <xpdl:Description>Ota käteesi suodatinsäiliö</xpdl:Description>
+                    <xpdl:Description>Ota kÃ¤teesi suodatinsÃ¤iliÃ¶</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -348,7 +349,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act81" Name="Put water compartment lid back to water compartment lid">
-                    <xpdl:Description>Aseta vesisäiliön kansi takaisin vesisäiliön päälle</xpdl:Description>
+                    <xpdl:Description>Aseta vesisÃ¤iliÃ¶n kansi takaisin vesisÃ¤iliÃ¶n pÃ¤Ã¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -368,7 +369,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act71" Name="Take water compartment lid">
-                    <xpdl:Description>Irroita vesisäiliön kansi</xpdl:Description>
+                    <xpdl:Description>Irroita vesisÃ¤iliÃ¶n kansi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -428,7 +429,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act41" Name="Take coffee pot lid">
-                    <xpdl:Description>Ota käteesi kahvipannun kansi</xpdl:Description>
+                    <xpdl:Description>Ota kÃ¤teesi kahvipannun kansi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -448,7 +449,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act31" Name="Add one cup of water to water reservoir">
-                    <xpdl:Description>Kaada kahvipannusta vesi vesisäiliöön</xpdl:Description>
+                    <xpdl:Description>Kaada kahvipannusta vesi vesisÃ¤iliÃ¶Ã¶n</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -468,7 +469,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act12" Name="Take coffee pot">
-                    <xpdl:Description>Ota kahvipannu pöydältä käteesi</xpdl:Description>
+                    <xpdl:Description>Ota kahvipannu pÃ¶ydÃ¤ltÃ¤ kÃ¤teesi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -508,7 +509,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act102" Name="Take coffee filter container lid from table">
-                    <xpdl:Description>Ota käteesi suodatinkotelon kansi pöydältä</xpdl:Description>
+                    <xpdl:Description>Ota kÃ¤teesi suodatinkotelon kansi pÃ¶ydÃ¤ltÃ¤</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -548,7 +549,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act82" Name="Take the ground coffee">
-                    <xpdl:Description>Ota kahvipaketti käteesi</xpdl:Description>
+                    <xpdl:Description>Ota kahvipaketti kÃ¤teesi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -568,7 +569,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act72" Name="Use spoon to add 2 full spoon coffee into coffee filter container">
-                    <xpdl:Description>Mittaa kaksi täyttä lusikallista kahvijauhetta suodatinkoteloon</xpdl:Description>
+                    <xpdl:Description>Mittaa kaksi tÃ¤yttÃ¤ lusikallista kahvijauhetta suodatinkoteloon</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -608,7 +609,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act52" Name="Put coffee bag on table">
-                    <xpdl:Description>Laita kahvipussi pöydälle</xpdl:Description>
+                    <xpdl:Description>Laita kahvipussi pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -648,7 +649,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act32" Name="Put coffee filter into coffee filter container">
-                    <xpdl:Description>Aseta suodatinpaperi suodatinsäiliöön</xpdl:Description>
+                    <xpdl:Description>Aseta suodatinpaperi suodatinsÃ¤iliÃ¶Ã¶n</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -688,7 +689,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act13" Name="Put coffee filter container lid on the table">
-                    <xpdl:Description>Aseta suodatinsäiliön kansi pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta suodatinsÃ¤iliÃ¶n kansi pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -708,7 +709,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act113" Name="Take coffee pot">
-                    <xpdl:Description>Ota kahvipannu kätessi</xpdl:Description>
+                    <xpdl:Description>Ota kahvipannu kÃ¤tessi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -728,7 +729,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act103" Name="Turn off coffee maker">
-                    <xpdl:Description>Katkaise virta kahvinkeittimestä</xpdl:Description>
+                    <xpdl:Description>Katkaise virta kahvinkeittimestÃ¤</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -808,7 +809,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act63" Name="Place the coffee saucer on table">
-                    <xpdl:Description>Aseta kahvilautanen pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta kahvilautanen pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -848,7 +849,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act43" Name="Wait for coffeemaker to finish">
-                    <xpdl:Description>Odota että kahvi on tippunut</xpdl:Description>
+                    <xpdl:Description>Odota ettÃ¤ kahvi on tippunut</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -868,7 +869,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act33" Name="Turn on the coffee maker">
-                    <xpdl:Description>Käynnistä kahvinkeitin</xpdl:Description>
+                    <xpdl:Description>KÃ¤ynnistÃ¤ kahvinkeitin</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -908,7 +909,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act14" Name="Take filter container from table">
-                    <xpdl:Description>Ota suodatinkotelo käteesi</xpdl:Description>
+                    <xpdl:Description>Ota suodatinkotelo kÃ¤teesi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -1009,7 +1010,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act164" Name="Put sugar container on table">
-                    <xpdl:Description>Aseta sokerikko pöydälle</xpdl:Description>
+                    <xpdl:Description>Aseta sokerikko pÃ¶ydÃ¤lle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -1049,7 +1050,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act166" Name="Add sugar to coffee">
-                    <xpdl:Description>Lisää sokeria kahviin</xpdl:Description>
+                    <xpdl:Description>LisÃ¤Ã¤ sokeria kahviin</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -1069,7 +1070,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act167" Name="Take sugar from table">
-                    <xpdl:Description>Ota sokerikko pöydältä käteesi</xpdl:Description>
+                    <xpdl:Description>Ota sokerikko pÃ¶ydÃ¤ltÃ¤ kÃ¤teesi</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
