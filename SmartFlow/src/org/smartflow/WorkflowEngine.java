@@ -136,8 +136,8 @@ public class WorkflowEngine implements MessageReceiver{
 		String msg = "";
 		this.processStep = "(" + this.stepNumber + "/" + (this.activities.size() - 2)  + ") "; //reduce two from size() since start and end activities are counted in size
 		if (this.getActivity(this.currentStepId).getName() != null) msg += this.processStep + this.getActivity(this.currentStepId).getName()  + "<br />";
-		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  Resources.DIV_STYLE + "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + "\"</img>"  + Resources.DIV_CLOSE;
-		if (this.getActivity(this.currentStepId).getDescription() != null) msg += this.getActivity(this.currentStepId).getDescription();
+		if (this.getActivity(this.currentStepId).getDescription() != null) msg += Resources.DIV_OPEN + this.getActivity(this.currentStepId).getDescription() + "</font></td></tr><tr><td>";
+		if (this.getActivity(this.currentStepId).getImagePath() != null && this.getActivity(this.currentStepId).getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getImagePath() + "\"</img>"  + Resources.DIV_CLOSE;
 		if (this.getActivity(this.currentStepId).getAttachedUtensil() != null && this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath().length() > 0 ) msg +=  "<img src=\"" + this.getActivity(this.currentStepId).getAttachedUtensil().getImagePath() + "\"</img>" + "<br />";
 		
 		this.appendVariable(Integer.toString(this.getActivity(this.currentStepId).getDuration())); //write duration in to a text file which will be read by javascript timer later

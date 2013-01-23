@@ -19,7 +19,7 @@ public abstract class Resources {
 			"</div><div align=\"center\" id=\"timer\"/></body>" +
 			"</html>";
 	
-	public static final String DIV_STYLE= "<table style=\"border-radius:4px;border-color:#000000;background-color:#4D778D;border-style:solid;padding:5px 5px 5px 5px;text-align:center;\"><tr><td><font size=\"16\">Apukuva</font></td></tr><tr><td>";
+	public static final String DIV_OPEN= "<table style=\"border-radius:4px;border-color:#000000;background-color:#4D778D;border-style:solid;padding:5px 5px 5px 5px;text-align:center;\"><tr><td><font size=\"12\">";
 	public static final String DIV_CLOSE = "</tr><td></table>";
 	
 	public static final String HTML_WORKFLOW_BUTTONS_START =
