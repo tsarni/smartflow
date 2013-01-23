@@ -1,0 +1,16 @@
+.table_cell {
+font-size:25px;
+border-radius:6px;
+border-color:#000000;
+background-color:#4D778D;
+border-style:solid;
+padding:5px 5px 5px 5px;text-align:center;
+}
+
+.wrapper {
+border-radius:6px;
+border-color:#ffffff;
+background-color:#64758E;
+border-style:solid;
+padding:5px 5px 5px 5px;
+}
