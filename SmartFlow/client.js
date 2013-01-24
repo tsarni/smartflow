@@ -1,15 +1,25 @@
 
 	var counter;
     var delayInSeconds;
+    var isStopped = false;
+    var TimeStr = "";
    
     
     
 
     function pollServer(msg){
     	if(msg === "START") {
-    		readVariable();
+    		if (isStopped == false) {
+    			readVariable();
+    		} 
+    		
     	}else {
-    		resetTimer();
+    		if (msg == "STOP") {
+    			
+    		}else {
+    			resetTimer();
+    		}
+    		
     	}
     	
         $.ajax({
@@ -20,16 +30,20 @@
             timeout:50000,
             success: function(data){ 
             	if(msg === "STOP") {
-            		
+            		isStopped = true;
+            		clearInterval(counter);
             	} else {
+            		
             		counter = setInterval(UpdateTimer, 1000); 
+            		isStopped == false;       		
             	}
-            	 document.getElementById("holder").innerHTML = data;},
+            	 document.getElementById("holder").innerHTML = data;
+            	 document.getElementById("timer").innerHTML = TimeStr;},
             error: function(XMLHttpRequest, textStatus, errorThrown){
                 alert("error: " + textStatus + " (" + errorThrown + ")");
                 setTimeout(
                     pollServer, /* Try again after.. */
-                    15000); /* milliseconds (15seconds) */
+                    30000); /* milliseconds (30seconds) */
             }
         });
     };
@@ -46,16 +60,19 @@
         var Minutes = Math.floor(Seconds / 60);
         Seconds -= Minutes * (60);
 
-        var TimeStr = LeadingZero(Minutes) + ":" + LeadingZero(Seconds)
+        TimeStr = LeadingZero(Minutes) + ":" + LeadingZero(Seconds)
 
         document.getElementById("timer").innerHTML = TimeStr;
         
-        if(delayInSeconds <= 0) {
-        	pollServer("NEXT");
-        	resetTimer();
-        } else {
-        	delayInSeconds -= 1;
-        }
+       
+    	   if(delayInSeconds <= 0) {
+           	pollServer("NEXT");
+           	resetTimer();
+           } else {
+           	delayInSeconds -= 1;
+           }
+       
+       
         
     }
 
@@ -67,6 +84,7 @@
 
     function resetTimer() {
     	clearInterval(counter);
+    	TimeStr = "";
     	readVariable();
     	document.getElementById("timer").innerHTML = "";
     }

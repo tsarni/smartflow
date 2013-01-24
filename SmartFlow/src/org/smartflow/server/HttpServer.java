@@ -23,6 +23,7 @@ import org.smartflow.WorkflowEngine;
 public class HttpServer implements MessageSender,Runnable{
 
 private boolean serverIsRunning = true;
+private boolean clientIsStopped = false;
 private Socket clientSocket;
 private ServerSocket serverSocket;
 private BufferedReader socketReader;
@@ -134,8 +135,14 @@ public void run() {
 					MessageHandler.getInstance().messageReceived("Next");
 				}if(action.equals("START")) {
 					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_STOP_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
-					MessageHandler.getInstance().messageReceived("Next");
+					if (!this.clientIsStopped) {
+						MessageHandler.getInstance().messageReceived("Next");
+					} else {
+						this.sendMessage(this.previousMessage);
+					}
+				
 				}if(action.equals("STOP")) {
+					this.clientIsStopped = true;
 					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_START_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
 					this.sendMessage(this.previousMessage);
 				}
