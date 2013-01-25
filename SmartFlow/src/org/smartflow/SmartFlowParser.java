@@ -62,19 +62,19 @@ public class SmartFlowParser {
 								
 								for (int e = 0; e < ACTIVITY.element("ExtendedAttributes").elements().size(); e++) {
 									Element el = (Element) ACTIVITY.element("ExtendedAttributes").elements().get(e);
+									
 									if (el.attributeValue("Name").equals("object_image")) {
 										activity.setImagePath(el.attributeValue("Value"));
-									}
-									if (el.attributeValue("Name").equals("utensil_image")) {
+									}if (el.attributeValue("Name").equals("utensil_image")) {
 										Utensil utensil = new Utensil();
 										utensil.setImagePath(el.attributeValue("Value"));
 										activity.attachUtensil(utensil);
-									}
-									if (el.attributeValue("Name").equals("duration")) {
+									}if (el.attributeValue("Name").equals("duration")) {
 										activity.setDuration(Integer.parseInt(el.attributeValue("Value")));
-									}
-									if (el.attributeValue("Name").equals("camera")) {
+									}if (el.attributeValue("Name").equals("camera")) {
 										activity.setCamera(Integer.parseInt(el.attributeValue("Value")));
+									}if (el.attributeValue("Name").equals("activity_video")) {
+										activity.setVideoComponent(el.attributeValue("Value"));
 									}
 								}
 

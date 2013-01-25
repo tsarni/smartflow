@@ -6,6 +6,7 @@ public class Activity {
 	private String id = "";
 	private String description = "";
 	private String imagePath = "";
+	private String videoComponent = "";
 	private Utensil attachedUtensil;
 	private int duration = 0;
 	private int camera;
@@ -73,6 +74,14 @@ public class Activity {
 
 	public void setCamera(int camera) {
 		this.camera = camera;
+	}
+
+	public String getVideoComponent() {
+		return videoComponent;
+	}
+
+	public void setVideoComponent(String videoComponent) {
+		this.videoComponent = videoComponent;
 	}
 
 	

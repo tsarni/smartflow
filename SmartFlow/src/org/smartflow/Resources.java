@@ -21,8 +21,9 @@ public abstract class Resources {
 			"</html>";
 	
 	public static final String DIV_OPEN= "<table class=\"wrapper\"><tr><td><table class=\"table_cell\"><tr><td>";
-	public static final String DIV_CLOSE = "</td></tr></table>";
 	
+	public static final String DIV_CLOSE = "</td></tr></table>";
+
 	public static final String HTML_WORKFLOW_BUTTONS_START =
 			"<table class=\"table_cell\" style=\"margin-top:10px\"><tr><td><button onclick=\"pollServer('PREVIOUS')\">Previous</button></td>";
 	
