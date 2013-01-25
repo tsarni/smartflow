@@ -69,7 +69,7 @@
             </xpdl:ProcessHeader>
             <xpdl:Activities>
                 <xpdl:Activity Id="Coffee_Making_act1" Name="Take the coffee pot">
-                    <xpdl:Description>Ota kahvipannu kÃ¤teesi kahvinkeittimestÃ¤</xpdl:Description>
+                    <xpdl:Description>Ota kahvipannu käteesi kahvinkeittimestä</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -77,14 +77,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="1.png"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="5"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/1.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="125" YCoordinate="59"/>
+                            <xpdl:Coordinates XCoordinate="129" YCoordinate="57"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -97,14 +97,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="2.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_pot_lid.jpg"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/2.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="240" YCoordinate="58"/>
+                            <xpdl:Coordinates XCoordinate="244" YCoordinate="58"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -117,10 +117,10 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="3.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="3"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/3.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -139,8 +139,8 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="4.png"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/4.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -157,10 +157,10 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="5.png"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="8"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/5.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -178,9 +178,9 @@
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="6.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="9"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/6.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -197,10 +197,10 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="7.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/7.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -217,10 +217,10 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="8.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_faucet.jpg"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="2"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/8.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
@@ -237,14 +237,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="9.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="7"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_coffee_pot.jpg"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/9.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1068" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="945" YCoordinate="133"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -257,14 +257,14 @@
                         <xpdl:Performer>Senior_Citizen</xpdl:Performer>
                     </xpdl:Performers>
                     <xpdl:ExtendedAttributes>
-                        <xpdl:ExtendedAttribute Name="object_image" Value="10.png"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="7"/>
                         <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="utensil_water_compartment_lid.jpg"/>
+                        <xpdl:ExtendedAttribute Name="activity_video" Value="&lt;embed src=&quot;Media/Video/10.swf&quot; height=&quot;480&quot; width=&quot;360&quot;/&gt;"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1191" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="829" YCoordinate="132"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -284,7 +284,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1775" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="243" YCoordinate="134"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -304,7 +304,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1660" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="359" YCoordinate="133"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -324,7 +324,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1542" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="475" YCoordinate="136"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -344,7 +344,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1424" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="593" YCoordinate="134"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -364,7 +364,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="1306" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="708" YCoordinate="133"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -384,7 +384,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3089" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="947" YCoordinate="216"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -404,7 +404,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2969" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="830" YCoordinate="216"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -424,7 +424,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2728" YCoordinate="54"/>
+                            <xpdl:Coordinates XCoordinate="593" YCoordinate="218"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -444,7 +444,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2608" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="475" YCoordinate="216"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -464,7 +464,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2493" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="359" YCoordinate="215"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -484,7 +484,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2375" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="244" YCoordinate="215"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -504,7 +504,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2257" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="125" YCoordinate="214"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -524,7 +524,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2139" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="125" YCoordinate="133"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -544,7 +544,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4381" YCoordinate="53"/>
+                            <xpdl:Coordinates XCoordinate="358" YCoordinate="367"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -564,7 +564,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4263" YCoordinate="53"/>
+                            <xpdl:Coordinates XCoordinate="245" YCoordinate="368"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -584,7 +584,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4140" YCoordinate="53"/>
+                            <xpdl:Coordinates XCoordinate="125" YCoordinate="372"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -604,7 +604,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3907" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="246" YCoordinate="290"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -624,7 +624,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3788" YCoordinate="54"/>
+                            <xpdl:Coordinates XCoordinate="359" YCoordinate="292"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -644,7 +644,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3668" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="475" YCoordinate="293"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -664,7 +664,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3553" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="591" YCoordinate="291"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -684,7 +684,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3435" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="707" YCoordinate="291"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -704,7 +704,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3317" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="830" YCoordinate="292"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -724,7 +724,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="3199" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="945" YCoordinate="291"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -744,7 +744,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4498" YCoordinate="53"/>
+                            <xpdl:Coordinates XCoordinate="475" YCoordinate="367"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -765,7 +765,7 @@
                     </xpdl:Event>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="236,120,98" Height="31" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="31">
-                            <xpdl:Coordinates XCoordinate="5631" YCoordinate="75"/>
+                            <xpdl:Coordinates XCoordinate="152" YCoordinate="461"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -785,7 +785,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4614" YCoordinate="56"/>
+                            <xpdl:Coordinates XCoordinate="591" YCoordinate="370"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -805,7 +805,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4729" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="706" YCoordinate="371"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -825,7 +825,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4846" YCoordinate="58"/>
+                            <xpdl:Coordinates XCoordinate="823" YCoordinate="372"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -845,7 +845,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4963" YCoordinate="58"/>
+                            <xpdl:Coordinates XCoordinate="940" YCoordinate="372"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -865,7 +865,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5076" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="941" YCoordinate="447"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -885,7 +885,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5188" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="824" YCoordinate="446"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -905,7 +905,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5295" YCoordinate="59"/>
+                            <xpdl:Coordinates XCoordinate="706" YCoordinate="445"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -925,7 +925,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5403" YCoordinate="60"/>
+                            <xpdl:Coordinates XCoordinate="590" YCoordinate="446"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -942,7 +942,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="5515" YCoordinate="62"/>
+                            <xpdl:Coordinates XCoordinate="472" YCoordinate="444"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -962,7 +962,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="4025" YCoordinate="55"/>
+                            <xpdl:Coordinates XCoordinate="125" YCoordinate="291"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
@@ -982,7 +982,7 @@
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>
                         <xpdl:NodeGraphicsInfo BorderColor="0,0,0" FillColor="187,247,190" Height="60" IsVisible="true" LaneId="Coffee_Making_pool1_lan2" ToolId="JaWE" Width="90">
-                            <xpdl:Coordinates XCoordinate="2851" YCoordinate="57"/>
+                            <xpdl:Coordinates XCoordinate="708" YCoordinate="218"/>
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
