@@ -29,13 +29,14 @@
             cache: false,
             timeout:50000,
             success: function(data){ 
+            	
             	if(msg === "STOP") {
             		isStopped = true;
             		clearInterval(counter);
+            	
             	} else {
-            		
-            		counter = setInterval(UpdateTimer, 1000); 
-            		isStopped == false;       		
+            			counter = setInterval(UpdateTimer, 1000); 
+                		isStopped == false;       			
             	}
             	 document.getElementById("holder").innerHTML = data;
             	 document.getElementById("timer").innerHTML = TimeStr;},

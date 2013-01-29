@@ -369,7 +369,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act92" Name="Put ground coffee back to upper left closet">
-                    <xpdl:Description>Laita kahvi takaisin vasemmanpuoleiseen yläkaappiin</xpdl:Description>
+                    <xpdl:Description>Laita kahvipaketti takaisin vasemmanpuoleiseen yläkaappiin</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -428,8 +428,8 @@
                         </xpdl:NodeGraphicsInfo>
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
-                <xpdl:Activity Id="Coffee_Making_act62" Name="Take coffee spoon upper left closet">
-                    <xpdl:Description>Ota vasemmanpuoleisesta yläkaapista kahvilusikka</xpdl:Description>
+                <xpdl:Activity Id="Coffee_Making_act62" Name="Take coffee spoon from upper left closet">
+                    <xpdl:Description>Ota kahvilusikka vasemmanpuoleisesta yläkaapista</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -449,7 +449,7 @@
                     </xpdl:NodeGraphicsInfos>
                 </xpdl:Activity>
                 <xpdl:Activity Id="Coffee_Making_act52" Name="Put coffee bag on table">
-                    <xpdl:Description>Laita kahvipussi pöydälle</xpdl:Description>
+                    <xpdl:Description>Laita kahvipaketti pöydälle</xpdl:Description>
                     <xpdl:Implementation>
                         <xpdl:No/>
                     </xpdl:Implementation>
@@ -459,7 +459,7 @@
                     <xpdl:ExtendedAttributes>
                         <xpdl:ExtendedAttribute Name="object_image" Value="/Media/Icons/26.png"/>
                         <xpdl:ExtendedAttribute Name="utensil_image" Value="/Media/Utensils/utensil_coffee_powder.jpg"/>
-                        <xpdl:ExtendedAttribute Name="camera" Value="3"/>
+                        <xpdl:ExtendedAttribute Name="camera" Value="1"/>
                         <xpdl:ExtendedAttribute Name="duration" Value="4"/>
                     </xpdl:ExtendedAttributes>
                     <xpdl:NodeGraphicsInfos>

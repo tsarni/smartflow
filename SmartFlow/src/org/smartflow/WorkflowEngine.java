@@ -16,9 +16,12 @@ public class WorkflowEngine implements MessageReceiver{
 	
 	private String startId;
 	private String currentStepId;
+
 	private String processStep;
 	private int stepNumber;
-	private Scheduler scheduler;
+	private int currentStep;
+	private long startTime;
+	
 	
 	private boolean isStarted = false;
 
@@ -44,13 +47,10 @@ public class WorkflowEngine implements MessageReceiver{
 		this.currentStepId = this.startId;
 		System.out.println("Start");
 		this.stepNumber = 0;
-		//Timer timer = new Timer();
-		//timer.scheduleAtFixedRate(new ScheduledTask(Settings.ACTIVITY_DURATION), 0, Settings.ACTIVITY_DURATION);
 		
-		//scheduler = new Scheduler(300);
-		//scheduler.run();
 		
 	}
+	
 	private Activity getActivity(String id) {
 		
 		Activity activity = null;
@@ -70,14 +70,14 @@ public class WorkflowEngine implements MessageReceiver{
 		if(!this.isStarted) {
 			this.startProcess();
 			this.isStarted = true;
-		}
+			this.startTime = System.currentTimeMillis();
+		}	
 		
 		if(this.getActivity(this.currentStepId).isEndActivity) {
-			//this.scheduler.isStopped = true;
+			//nothing
 		} else {
 			this.currentStepId = this.transitions.get(this.currentStepId);
 			this.stepNumber++;
-			
 			
 			if (this.getActivity(this.currentStepId).isEndActivity) {
 				MessageHandler.getInstance().sendMessage("End");
@@ -85,6 +85,8 @@ public class WorkflowEngine implements MessageReceiver{
 				if(this.getActivity(this.currentStepId).getName() != null) {
 					MessageHandler.getInstance().sendMessage(this.formatLayout());
 					System.out.println(this.getActivity(this.currentStepId).getName());
+					this.currentStep++;
+					this.logTimeElapsed();
 				}
 			}
 		}
@@ -110,6 +112,8 @@ public class WorkflowEngine implements MessageReceiver{
 				if(this.getActivity(this.currentStepId).getName() != null) {
 					MessageHandler.getInstance().sendMessage(this.formatLayout());
 					System.out.println(this.getActivity(this.currentStepId).getName());
+					this.currentStep--;
+					this.logTimeElapsed();
 				}
 			}
 			
@@ -160,6 +164,23 @@ public class WorkflowEngine implements MessageReceiver{
 		    System.err.println("IOException: " + ioe.getMessage());
 		}
 
+	}
+	
+	private void logTimeElapsed () {
+		
+		try
+		{
+		    String filename= "elapsed_times.txt";
+		    long elapsedTime = System.currentTimeMillis() - this.startTime;
+
+		    FileWriter fw = new FileWriter(filename,true); //the true will append the new data
+		    fw.write(this.currentStep + ": " + elapsedTime + " ms\n");//appends the string to the file
+		    fw.close();
+		}
+		catch(IOException ioe)
+		{
+		    System.err.println("IOException: " + ioe.getMessage());
+		}
 	}
 	
 	@Override

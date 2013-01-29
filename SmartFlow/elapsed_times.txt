@@ -1,0 +1,4 @@
+Take the coffee pot: 16 ms
+Remove the pot lid: 6100 ms
+1: 38 ms
+2: 3085 ms

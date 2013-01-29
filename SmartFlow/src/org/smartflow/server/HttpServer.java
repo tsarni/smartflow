@@ -130,8 +130,10 @@ public void run() {
 				String action = httpQueryString.replaceFirst("/", "");
 				 
 				if(action.equals("PREVIOUS")) {
+					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_STOP_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
 					MessageHandler.getInstance().messageReceived("Previous");
 				}if(action.equals("NEXT")) {
+					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_STOP_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
 					MessageHandler.getInstance().messageReceived("Next");
 				}if(action.equals("START")) {
 					this.buttonLayout = Resources.HTML_WORKFLOW_BUTTONS_START + Resources.HTML_STOP_BUTTON + Resources.HTML_WORKFLOW_BUTTONS_END;
